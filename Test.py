@@ -1,21 +1,33 @@
-import pandas as pd
+import tkinter as tk
+from tkinter import simpledialog
+from datetime import date
+from dateutil.relativedelta import relativedelta
 
-columns = ['col1', 'col2', 'val']
-df = pd.DataFrame(columns=columns)
-df.loc[0] = [1, 1, 3]
-df.loc[1] = [1, 2, 8]
-df.loc[2] = [1, 1, 2]
-df.loc[3] = [1, 2, 9]
-df.loc[4] = [2, 3, 2]
-df.loc[5] = [2, 4, 7]
-df.loc[6] = [2, 3, 9]
-df.loc[7] = [2, 4, 1]
-df.loc[8] = [3, 5, 11]
-df.loc[9] = [3, 6, 4]
-df.loc[10] = [3, 5, 35]
-df.loc[11] = [3, 6, 79]
 
-print(df)
+ROOT = tk.Tk()
 
-print(df[['col1', 'col2', 'avg']].groupby(['col1', 'col2']).mean())
+ROOT.withdraw()
+# the input dialog
+USER_INP = simpledialog.askinteger(title="Historical Air Quality Data Collection",
+                                  prompt="How many days historical data do you want?:")
+
+yesterday = date.today() + relativedelta(days=-1)
+yesterday_day = yesterday.strftime("%d")
+yesterday_month = yesterday.strftime("%b")
+yesterday_year = yesterday.strftime("%Y")
+yesterday = yesterday_day + "+" + yesterday_month + "+" + yesterday_year
+
+user_date = date.today() + relativedelta(days=-USER_INP)
+user_date_day = user_date.strftime("%d")
+user_date_month = user_date.strftime("%b")
+user_date_year = user_date.strftime("%Y")
+user_date = user_date_day + "+" + user_date_month + "+" + user_date_year
+
+URL = ('https://airquality.ie/readings?station=' + "EPA-25" + '&dateFrom=09+Mar+2022&dateTo=10+Mar+2022')
+URL1 = ('https://airquality.ie/readings?station=' + "EPA-25" + '&dateFrom=' + user_date + '&dateTo=' + yesterday)
+
+# check it out
+print("You requested", USER_INP, "days.")
+print(URL)
+print(URL1)
 

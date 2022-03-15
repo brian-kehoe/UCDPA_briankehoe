@@ -1,5 +1,7 @@
 import pandas as pd
 
+print()
+print("Beginning data analysis")
 
 # Load aq_current_valid_sites.csv and get the site codes
 current_valid_sites = pd.read_csv('aq_current_valid_sites.csv')
