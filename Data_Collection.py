@@ -28,7 +28,11 @@ def get_data():
     url = "https://airquality.ie/assets/php/get-monitors.php"
     headers = {"Referer": "https://airquality.ie/assets/php"}
     aq_current_raw_data = pd.read_json(requests.get(url, headers=headers).text)
-    aq_current_latest_reading = pd.json_normalize(aq_current_raw_data['latest_reading'])
+    print(aq_current_raw_data['latest_reading'])
+    aq_current_latest_reading_dict = pd.DataFrame.from_dict(aq_current_raw_data['latest_reading'])
+    print(aq_current_latest_reading_dict)
+    aq_current_latest_reading = aq_current_latest_reading_dict['latest_reading'].apply(pd.Series)
+    #aq_current_latest_reading = pd.json_normalize(aq_current_raw_data['latest_reading'])
     aq_current_data = pd.merge(aq_current_raw_data, aq_current_latest_reading, left_on='monitor_id', right_on='monitor_id')
     aq_current_data.to_csv('aq_current_data.csv')
 
@@ -55,6 +59,17 @@ else:
     else:
         print("CSV stale = False")
 
+aq_current_data_read = pd.read_csv('aq_current_data.csv')
+
+# Filter dataframe to only include sites which do not have a status = red and do not have blank pm2_5 data
+# Sort data by pm2_5 values in descending order
+# Remove sites with negative 'pm2_5' value
+aq_current_valid_sites = aq_current_data_read.copy()
+aq_current_valid_sites = aq_current_valid_sites[(aq_current_valid_sites['status'] != 'red')
+                                                & (aq_current_valid_sites['pm2_5'].notnull())]
+aq_current_valid_sites = aq_current_valid_sites[aq_current_valid_sites['pm2_5'] > 0]
+aq_current_valid_sites.sort_values(by=['pm2_5'], inplace=True, ascending=False)
+aq_current_valid_sites.to_csv('aq_current_valid_sites.csv')
 
 print()
 print("Finished collecting current air quality data")
@@ -66,13 +81,14 @@ print()
 print("Beginning historic data collection process")
 
 
+# User input dialog to capture required number of days of historical data
 ROOT = tk.Tk()
 ROOT.withdraw()
 # the input dialog
 USER_INP = simpledialog.askinteger(title="Historical Air Quality Data Collection",
                                    prompt="How many days historical data do you want?:")
 
-yesterday = date.today() + relativedelta(days=-1)
+yesterday = date.today() + relativedelta(days=-228)
 yesterday_day = yesterday.strftime("%d")
 yesterday_month = yesterday.strftime("%b")
 yesterday_year = yesterday.strftime("%Y")
@@ -85,9 +101,9 @@ user_date_year = user_date.strftime("%Y")
 user_date = user_date_day + "+" + user_date_month + "+" + user_date_year
 
 
-# Load aq_current_valid_sites.csv and get the site codes
-current_valid_sites = pd.read_csv('aq_current_valid_sites.csv')
-sites = current_valid_sites["code"]
+# Create list of current valid site codes
+sites = aq_current_valid_sites["code"]
+print(sites)
 sites_count = len(sites)  # Count number of sites
 
 # Set column names and create empty dataframe
@@ -96,7 +112,7 @@ aq_historical_data = pd.DataFrame(columns=column_names)
 
 
 print()
-print("New chromedriver window will open automatically for data import")
+print("Please wait: New chromedriver window will open automatically for data import...")
 print()
 
 
@@ -108,7 +124,6 @@ driver.set_window_size(1200, 700)
 
 # Load initial page
 driver.get('https://airquality.ie/readings?station=' + "EPA-25" + '&dateFrom=' + yesterday + '&dateTo=' + yesterday)
-# driver.get('https://airquality.ie/readings?station=EPA-25&dateFrom=01+Feb+2022&dateTo=02+Feb+2022')
 print("Opened airquality.ie")
 time.sleep(1)  # Wait 1 second
 
@@ -127,8 +142,6 @@ progress = 0
 # For loop - Open each site URL
 for i in sites:
     URL = ('https://airquality.ie/readings?station=' + i + '&dateFrom=' + user_date + '&dateTo=' + yesterday)
-    # URL = ('https://airquality.ie/readings?station=' + i + '&dateFrom=09+Mar+2022&dateTo=10+Mar+2022')
-    # URL = ('https://airquality.ie/readings?station=' + i + '&dateFrom=01+Sep+2021&dateTo=28+Feb+2022')
     driver.get(URL)
     print("Opened " + URL)
     print("Retrieving data...")
