@@ -5,9 +5,12 @@ import folium
 import webbrowser
 from plotly import graph_objects as go
 from plotly.subplots import make_subplots
+import numpy as np
+import seaborn as sns
+from tkinter import *
 
 
-# Current air quality data visualisation
+# ###### CURRENT AIR QUALITY DATA VISUALISATION ######
 print()
 print("Current air quality data visualisation")
 
@@ -15,50 +18,226 @@ print("Current air quality data visualisation")
 aq_current_valid_sites = pd.read_csv('aq_current_valid_sites.csv')
 
 
-# Create scatter plot for top pm2_5 values
+# #### Create scatter plot for top current pm2_5 values ####
 print("")
-print("Displaying: Top 10 Sites - Scatter Plot")
-fig, ax = plt.subplots()
-ax.plot(aq_current_valid_sites['location'][:10], aq_current_valid_sites['pm2_5'][:10])
-ax.set_title("Top 10 PM2.5 Values")
+print("Displaying: Top 15 Sites - Scatter Plot")
+fig, ax = plt.subplots(figsize=(10, 8))
+ax.plot(aq_current_valid_sites['location'][:15], aq_current_valid_sites['pm2_5'][:15])
+ax.set_title("Top 15 PM2.5 Values")
 ax.set_xlabel("Town")
-plt.xticks(rotation=90)
+plt.xticks(rotation=45, fontsize=7)
 ax.set_ylabel("PM2.5 level")
 plt.tight_layout()
+plt.savefig("axplot_plt.png")
 plt.show()
 
 
-# # Create Plotly/Mapbox visualisation of air quality data for locations in Ireland
+# #### Create plots for historical data for selected location ####
+# Read "top_sites_monthly_max_mean.csv"
+# Filter to unique list of locations
+df_month_max = pd.read_csv("top_sites_monthly_max_mean.csv")
+df_location = df_month_max['location'].unique()
+
+# Pop-up to allow user select location
+window = Tk()
+window.title("Historical air quality analysis")
+window.geometry('300x90')
+
+frame = LabelFrame(
+    window,
+    text='Select location:',
+    bg='#f0f0f0',
+    font=18
+)
+frame.pack(expand=TRUE, fill=BOTH)
+
+variable = StringVar(window)
+
+w = OptionMenu(window, variable, *df_location)
+w.pack()
+
+
+def ok():
+    print("Chosen location is: " + variable.get())
+    window.destroy()
+
+
+button = Button(window, text="OK", command=ok)
+button.pack()
+mainloop()
+
+# Read historical data
+df_read = pd.read_csv('aq_data_merge.csv')
+
+# Store user site selection
+user_location = variable.get()
+user_site = df_read.loc[df_read['location'] == user_location, 'Site'].unique()
+user_site = user_site[0]
+
+# Filter historical data to user_site selection
+df = df_read.copy()
+df['date'] = pd.to_datetime(df['Date and Time'], format="%d/%m/%Y %H:%M")
+df = df[df['Site'] == user_site]
+df = df.drop(columns=['Unnamed: 0', 'PM10', 'SO2', 'Date and Time'])
+df = df.dropna()
+
+# Set categorical order for months
+df_month = df_month_max.copy()
+df_month = df_month[df_month['Site'] == user_site]
+df_month['month'] = pd.Categorical(df_month['month'], categories=[6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5], ordered=True)
+df_month.sort_values('month', inplace=True)
+
+# Define xticklabels
+day_of_week = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+months = ['jul', 'aug', 'sep', 'oct', 'nov', 'dec', 'jan', 'feb', 'mar', 'apr', 'may', 'jun']
+
+
+# Creating graphs of pollutant concentrations by hour, month and day of week
+fig, axes = plt.subplots(1, 3, sharex=False, figsize=(18, 5))  # creating subplots, side by side
+sns.set_style('whitegrid')
+
+# concentration vs hour
+axes[0] = sns.lineplot(ax=axes[0],
+                       data=df,
+                       x=df['date'].dt.hour,
+                       y=df['PM2.5'],
+                       color='red',
+                       linewidth=1.5,
+                       palette="hls")
+axes[0].set(xticks=([0, 6, 12, 18, 24]))
+axes[0].set_yticklabels(axes[0].get_yticks(), fontsize=13)
+axes[0].set_xlabel('hour', fontsize=15)
+axes[0].set_ylabel('PM2.5', fontsize=15)
+
+# concentration vs month
+axes[1] = sns.pointplot(ax=axes[1],
+                        data=df_month,
+                        x='month',
+                        y='monthly max mean',
+                        color='red',
+                        scale=0.6,
+                        markers='',
+                        order=df_month['month'])
+axes[1].set_xticklabels(months, fontsize=13)
+axes[1].set_yticklabels(axes[1].get_yticks(), fontsize=13)
+axes[1].set_xlabel('month', fontsize=15)
+axes[1].set_ylabel('')
+axes[1].set_title(user_location, fontsize=18)
+
+# concentration vs day of week
+pollutant_daily_max = max(df.groupby(df['date'].dt.dayofweek)['PM2.5'].mean()) * 1.3 # setting the lim of y due to max mean
+axes[2] = sns.lineplot(ax=axes[2],
+                       data=df,
+                       x=df['date'].dt.dayofweek,
+                       y=df['PM2.5'],
+                       color='red',
+                       linewidth=1.5,
+                       palette="hls")
+axes[2].set_xticks(np.arange(0, 7, 1))
+axes[2].set_xticklabels(day_of_week, fontsize=13)
+axes[2].set_ylim(0, pollutant_daily_max)
+axes[2].set_xlabel('day of week', fontsize=15)
+axes[2].set_ylabel('')
+#axes[2].legend().set_title('')
+
+#fig.figure.savefig("snsplot.png")
+plt.savefig("snsplot_plt.png")
+webbrowser.open_new_tab('snsplot_plt.png')
+
+# creating graphs of concentration by hour by specific day of week
+fig2, axes2 = plt.subplots(1, 7, sharex=True, figsize=(18, 2.25))  # subplots for each day of week
+
+# Plots
+pollutant_max = max(df.groupby(df['date'].dt.hour)['PM2.5'].mean()) * 1.35  # setting the lim of y due to max mean
+pollutant_max_round5 = 2.5 * round(pollutant_max/2.5)
+for i in range(7):
+    axes2[i] = sns.lineplot(ax=axes2[i], data=df,
+                            x=df[df.date.dt.dayofweek == i]['date'].dt.hour,
+                            y=df['PM2.5'],
+                            color='red',
+                            linewidth=1,
+                            palette="hls",
+                            ci=None)
+    axes2[i].set_xlabel('hour', fontsize=6)
+    if i == 0:
+        axes2[i].set_ylabel('PM2.5', fontsize=12)
+    else:
+        axes2[i].set_ylabel('')
+        axes2[i].set_yticklabels('')
+    if i == 3:
+        axes2[i].set_title(user_location)
+    else:
+        pass
+    axes2[i].set_ylim(0, pollutant_max_round5)
+    axes2[i].set(xticks=([0, 8, 16, 24]))
+    axes2[i].legend(loc='upper left').set_title(day_of_week[i])
+
+plt.savefig("snsplot2_plt.png")
+webbrowser.open_new_tab('snsplot2_plt.png')
+
+
+# #### Create Plotly/Mapbox visualisation of current air quality data for locations in Ireland ####
 print("")
 print("Opening: Interactive map in browser. Please wait...")
 mapbox_access_token = "pk.eyJ1IjoiYnJpYW5rZWhvZSIsImEiOiJja3pvNjhjeGwxdnhtMm5sbGI2em9uMmVlIn0.WjqVTAdM5dik0MsAMasyGA"
 px.set_mapbox_access_token(mapbox_access_token)
-fig = px.scatter_mapbox(aq_current_valid_sites, lat="latitude", lon="longitude", color="location",
+fig = px.scatter_mapbox(aq_current_valid_sites, lat="latitude", lon="longitude", color="pm2_5",
+                        title="Current PM2.5 Readings (µg/m³)",
                         size=aq_current_valid_sites['pm2_5'],
-                        color_continuous_scale=px.colors.cyclical.IceFire, size_max=20, zoom=6)
+                        color_continuous_scale=px.colors.diverging.Portland,
+                        size_max=20,
+                        zoom=6,
+                        hover_data={'latitude': False,  # remove species from hover data
+                                    'longitude': False,
+                                    'location': True,
+                                    'pm2_5': ':.1f'})
 fig.show()
 
 
+# #### Create Folium visualisation of current air quality data for locations in Ireland ####
 print()
 print("Opening folium map")
 location = aq_current_valid_sites['latitude'].mean(), aq_current_valid_sites['longitude'].mean()
 current_aq_map = folium.Map(location=location, zoom_start=7)
 
+conditions = [
+    (aq_current_valid_sites['pm2_5'] < 50),
+    (aq_current_valid_sites['pm2_5'] >= 51) & (aq_current_valid_sites['pm2_5'] < 100),
+    (aq_current_valid_sites['pm2_5'] >= 101) & (aq_current_valid_sites['pm2_5'] < 150),
+    (aq_current_valid_sites['pm2_5'] >= 151) & (aq_current_valid_sites['pm2_5'] < 200),
+    (aq_current_valid_sites['pm2_5'] >= 201) & (aq_current_valid_sites['pm2_5'] < 300),
+    (aq_current_valid_sites['pm2_5'] >= 300)]
+
+values = ['green', 'yellow', 'orange', 'red', 'purple', 'darkpurple']
+aq_current_valid_sites['marker_color'] = np.select(conditions, values)
+
+
 for index, location_info in aq_current_valid_sites.iterrows():
-    folium.Circle([location_info["latitude"], location_info["longitude"]],
-                  popup=location_info["location"],
-                  radius=float(location_info['pm2_5']) * 100,
+    latitude = location_info['latitude']
+    longitude = location_info['longitude']
+    location = location_info['location']
+    current_pm2_5 = location_info['pm2_5']
+
+    folium.Circle([latitude, longitude],
+                  popup=location + "<br>" + "Current PM2.5 : " + str(round(current_pm2_5, 2)),
+                  tooltip=location + "<br>" + "Current PM2.5: " + str(round(current_pm2_5, 2)),
+                  radius=float(current_pm2_5) * 100,
+                  color=location_info['marker_color'],
+                  fill_opacity=0.6,
+                  fill_color=location_info['marker_color'],
+                  fill=True
                   ).add_to(current_aq_map)
 
 current_aq_map.save("current_aq_map.html")
 webbrowser.open_new_tab('current_aq_map.html')
 
 
-# Historical air quality data visualisation
-print("Beginning data visualisation")
+# ###### HISTORICAL AIR QUALITY DATA VISUALISATION ######
+print("Beginning historical data visualisation")
 
 print("")
 print("Opening: Interactive map in browser. Please wait...")
+
 
 df = pd.read_csv('top_sites_daily_max_mean.csv')
 
@@ -154,8 +333,8 @@ df1 = pd.DataFrame(location_list, columns=['location'])
 df2 = pd.DataFrame(html_list, columns=['html_file'])
 df3 = pd.concat([df1, df2], axis=1)
 
-
-lat_lon = pd.read_csv(r'lat_lon_aq_data_auto.csv')
+# Load latitude and longitude data
+lat_lon = pd.read_csv(r'lat_lon_aq_data.csv')
 
 # Add the latitude and longitude for each location so that we can later on add them to markers
 df_final = df3.merge(lat_lon, on='location', how='left')
@@ -164,14 +343,11 @@ df_final = df_final.drop(columns=['Unnamed: 0'])
 
 df_latest = df.copy()
 df_latest = df_latest.groupby(['location']).last()
-
 df_latest = df_latest.drop(columns=['Unnamed: 0', 'daily max', 'daily mean', 'PM10', 'SO2', 'time',
                                     'Date and Time', 'daily_mean', 'daily_max', 'text'])
-
-
 df_final_latest = df_final.merge(df_latest, on='location', how='left')
 
-
+# Set location for map centre
 location = df_final_latest['latitude'].mean(), df_final_latest['longitude'].mean()
 historical_aq_map = folium.Map(location=location, zoom_start=7)
 
@@ -179,20 +355,21 @@ for i in range(0, len(df_final_latest)):
     html = """
     <iframe src=\"""" + str(df_final_latest['html_file'][i]) + """\" width="850" height="400"  frameborder="0">
     """
+    latitude = df_final_latest['latitude'].iloc[i]
+    longitude = df_final_latest['longitude'].iloc[i]
+    location = df_final_latest.iloc[i]['location']
+    daily_max_mean = df_final_latest.iloc[i]['daily max mean']
 
-    #popup = folium.Popup(folium.Html(html, script=True))
-    # folium.Marker([df_final_latest['Latitude'].iloc[i], df_final_latest['Longitude'].iloc[i]],
-    #               popup=popup, icon=folium.Icon(icon='fire', prefix='fa')
-    #               ).add_to(m)
-
-    folium.Circle(location=[df_final_latest['latitude'].iloc[i], df_final_latest['longitude'].iloc[i]],
-                  radius=float(df_final_latest.iloc[i]['PM2.5'])*100,
+    folium.Circle(location=[latitude, longitude],
+                  radius=float(daily_max_mean)*100,
                   color='crimson',
                   fill_opacity=0.6,
                   fill_color='crimson',
+                  tooltip=location + "<br>" + "Max Daily PM2.5 (Mean): " + str(round(daily_max_mean, 2)),
                   fill=True).add_child(folium.Popup(folium.Html(html, script=True))
-                   ).add_to(historical_aq_map)
+                                       ).add_to(historical_aq_map)
 
 historical_aq_map.save("historical_aq_map.html")
-
 webbrowser.open_new_tab('historical_aq_map.html')
+
+
