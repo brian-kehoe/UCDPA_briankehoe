@@ -1,0 +1,165 @@
+,Site,location,month,monthly max mean
+0,EPA-102,"Edenderry Library, Co. Offaly",8,8.3
+1,EPA-102,"Edenderry Library, Co. Offaly",9,21.273000000000003
+31,EPA-102,"Edenderry Library, Co. Offaly",10,34.46032258064516
+62,EPA-102,"Edenderry Library, Co. Offaly",11,38.583
+92,EPA-102,"Edenderry Library, Co. Offaly",12,97.46548387096773
+123,EPA-102,"Edenderry Library, Co. Offaly",1,81.53903225806452
+154,EPA-102,"Edenderry Library, Co. Offaly",2,28.748
+179,EPA-102,"Edenderry Library, Co. Offaly",3,64.27428571428571
+193,EPA-106,"Leixlip Library, Co. Kildare",2,15.594999999999999
+201,EPA-106,"Leixlip Library, Co. Kildare",3,34.745714285714286
+215,EPA-24,"Enniscorthy, Co. Wexford",3,25.82
+233,EPA-24,"Enniscorthy, Co. Wexford",4,29.834
+263,EPA-24,"Enniscorthy, Co. Wexford",5,15.001290322580646
+294,EPA-24,"Enniscorthy, Co. Wexford",6,11.608387096774194
+325,EPA-24,"Enniscorthy, Co. Wexford",7,11.516129032258064
+356,EPA-24,"Enniscorthy, Co. Wexford",8,8.994193548387097
+387,EPA-24,"Enniscorthy, Co. Wexford",9,12.371
+417,EPA-24,"Enniscorthy, Co. Wexford",10,22.948709677419355
+448,EPA-24,"Enniscorthy, Co. Wexford",11,40.053
+478,EPA-24,"Enniscorthy, Co. Wexford",12,32.10290322580645
+509,EPA-24,"Enniscorthy, Co. Wexford",1,74.26322580645162
+540,EPA-24,"Enniscorthy, Co. Wexford",2,23.646785714285716
+582,EPA-25,"Ennis, Co. Clare",3,87.98375
+600,EPA-25,"Ennis, Co. Clare",4,45.91740740740741
+627,EPA-25,"Ennis, Co. Clare",5,21.71923076923077
+653,EPA-25,"Ennis, Co. Clare",6,12.849666666666668
+683,EPA-25,"Ennis, Co. Clare",7,10.096129032258066
+714,EPA-25,"Ennis, Co. Clare",8,13.803870967741936
+745,EPA-25,"Ennis, Co. Clare",9,18.598000000000003
+775,EPA-25,"Ennis, Co. Clare",10,37.799
+805,EPA-25,"Ennis, Co. Clare",11,108.12400000000001
+835,EPA-25,"Ennis, Co. Clare",12,71.87241379310345
+864,EPA-25,"Ennis, Co. Clare",1,138.5916129032258
+895,EPA-25,"Ennis, Co. Clare",2,55.36103448275862
+938,EPA-39,"People's Park, Limerick",3,41.593809523809526
+945,EPA-39,"People's Park, Limerick",4,21.35666666666667
+975,EPA-39,"People's Park, Limerick",5,10.881612903225806
+1006,EPA-39,"People's Park, Limerick",6,9.285333333333334
+1036,EPA-39,"People's Park, Limerick",7,8.065483870967743
+1067,EPA-39,"People's Park, Limerick",8,10.3156
+1092,EPA-39,"People's Park, Limerick",9,10.578
+1122,EPA-39,"People's Park, Limerick",10,14.096774193548388
+1153,EPA-39,"People's Park, Limerick",11,29.142666666666667
+1183,EPA-39,"People's Park, Limerick",12,40.8716129032258
+1214,EPA-39,"People's Park, Limerick",1,55.146875
+1246,EPA-39,"People's Park, Limerick",2,28.854285714285716
+1288,EPA-43,Longford Town,3,46.8828125
+1306,EPA-43,Longford Town,4,26.857666666666667
+1336,EPA-43,Longford Town,5,22.940322580645162
+1367,EPA-43,Longford Town,6,14.273636363636363
+1400,EPA-43,Longford Town,7,11.583
+1430,EPA-43,Longford Town,8,12.386451612903226
+1461,EPA-43,Longford Town,9,18.607741935483872
+1492,EPA-43,Longford Town,10,31.950967741935486
+1523,EPA-43,Longford Town,11,52.768
+1553,EPA-43,Longford Town,12,38.29096774193548
+1584,EPA-43,Longford Town,1,60.32096774193548
+1615,EPA-43,Longford Town,2,28.874444444444446
+1656,EPA-59,"Brownes Road, Waterford",3,24.4790625
+1674,EPA-59,"Brownes Road, Waterford",4,25.94896551724138
+1703,EPA-59,"Brownes Road, Waterford",5,12.293333333333333
+1721,EPA-59,"Brownes Road, Waterford",6,10.924333333333333
+1751,EPA-59,"Brownes Road, Waterford",7,9.735483870967743
+1782,EPA-59,"Brownes Road, Waterford",8,13.116129032258064
+1813,EPA-59,"Brownes Road, Waterford",9,11.770625
+1845,EPA-59,"Brownes Road, Waterford",10,14.182258064516128
+1876,EPA-59,"Brownes Road, Waterford",11,24.534857142857145
+1911,EPA-59,"Brownes Road, Waterford",12,36.1125925925926
+1938,EPA-59,"Brownes Road, Waterford",1,66.35064516129032
+1969,EPA-59,"Brownes Road, Waterford",2,18.144827586206898
+2012,EPA-63,Wexford Opera House,3,33.269375
+2030,EPA-63,Wexford Opera House,4,23.985416666666666
+2054,EPA-63,Wexford Opera House,5,17.589032258064517
+2085,EPA-63,Wexford Opera House,6,10.610999999999999
+2115,EPA-63,Wexford Opera House,7,10.791612903225808
+2146,EPA-63,Wexford Opera House,8,9.009677419354839
+2177,EPA-63,Wexford Opera House,9,12.99
+2207,EPA-63,Wexford Opera House,10,21.348064516129032
+2238,EPA-63,Wexford Opera House,11,37.142
+2268,EPA-63,Wexford Opera House,12,36.398387096774194
+2299,EPA-63,Wexford Opera House,1,91.84096774193549
+2330,EPA-63,Wexford Opera House,2,29.645000000000003
+2372,EPA-64,"Letterkenny, Co. Donegal",3,61.3978125
+2390,EPA-64,"Letterkenny, Co. Donegal",4,38.84433333333333
+2420,EPA-64,"Letterkenny, Co. Donegal",5,27.815161290322582
+2451,EPA-64,"Letterkenny, Co. Donegal",6,12.81
+2481,EPA-64,"Letterkenny, Co. Donegal",7,9.783225806451613
+2512,EPA-64,"Letterkenny, Co. Donegal",8,13.719354838709679
+2543,EPA-64,"Letterkenny, Co. Donegal",9,20.373
+2573,EPA-64,"Letterkenny, Co. Donegal",10,48.21806451612903
+2604,EPA-64,"Letterkenny, Co. Donegal",11,50.07733333333333
+2634,EPA-64,"Letterkenny, Co. Donegal",12,69.54645161290323
+2665,EPA-64,"Letterkenny, Co. Donegal",1,51.303870967741936
+2696,EPA-64,"Letterkenny, Co. Donegal",2,31.423571428571428
+2738,EPA-66,Tipperary Town,3,42.505
+2756,EPA-66,Tipperary Town,4,27.516666666666666
+2786,EPA-66,Tipperary Town,5,13.981935483870968
+2817,EPA-66,Tipperary Town,6,12.976
+2847,EPA-66,Tipperary Town,7,13.064838709677419
+2878,EPA-66,Tipperary Town,8,9.519629629629629
+2905,EPA-66,Tipperary Town,9,12.286774193548387
+2936,EPA-66,Tipperary Town,10,19.740000000000002
+2967,EPA-66,Tipperary Town,11,33.778666666666666
+2997,EPA-66,Tipperary Town,12,47.90967741935484
+3028,EPA-66,Tipperary Town,1,68.27741935483871
+3059,EPA-66,Tipperary Town,2,19.616785714285715
+3101,EPA-67,"Macroom, Co. Cork",3,57.471875
+3119,EPA-67,"Macroom, Co. Cork",4,29.207666666666668
+3149,EPA-67,"Macroom, Co. Cork",5,19.581612903225807
+3180,EPA-67,"Macroom, Co. Cork",6,10.998275862068965
+3209,EPA-67,"Macroom, Co. Cork",7,9.143548387096773
+3240,EPA-67,"Macroom, Co. Cork",8,8.886206896551723
+3269,EPA-67,"Macroom, Co. Cork",9,13.742333333333333
+3299,EPA-67,"Macroom, Co. Cork",10,30.188709677419357
+3330,EPA-67,"Macroom, Co. Cork",11,53.777
+3360,EPA-67,"Macroom, Co. Cork",12,51.759655172413794
+3389,EPA-67,"Macroom, Co. Cork",1,81.55483870967743
+3420,EPA-67,"Macroom, Co. Cork",2,49.33107142857143
+3462,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",3,47.201875
+3480,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",4,31.316666666666666
+3510,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",5,16.142666666666667
+3540,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",6,11.0725
+3572,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",7,9.959032258064516
+3603,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",8,10.406538461538462
+3629,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",9,14.846333333333332
+3659,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",10,21.14
+3690,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",11,38.63466666666667
+3720,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",12,25.60483870967742
+3751,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",1,37.55838709677419
+3782,EPA-70,"Athlone Civic Centre & Library, Co. Westmeath",2,22.97964285714286
+3824,EPA-71,"Tralee Library, Co. Kerry",3,65.05499999999999
+3842,EPA-71,"Tralee Library, Co. Kerry",4,35.63857142857143
+3870,EPA-71,"Tralee Library, Co. Kerry",5,23.065483870967743
+3901,EPA-71,"Tralee Library, Co. Kerry",6,17.035666666666668
+3931,EPA-71,"Tralee Library, Co. Kerry",7,14.328064516129032
+3962,EPA-71,"Tralee Library, Co. Kerry",8,13.471290322580646
+3993,EPA-71,"Tralee Library, Co. Kerry",9,15.371333333333332
+4023,EPA-71,"Tralee Library, Co. Kerry",10,33.582258064516125
+4054,EPA-71,"Tralee Library, Co. Kerry",11,71.02166666666668
+4084,EPA-71,"Tralee Library, Co. Kerry",12,70.20354838709677
+4115,EPA-71,"Tralee Library, Co. Kerry",1,110.1609677419355
+4146,EPA-71,"Tralee Library, Co. Kerry",2,48.91357142857142
+4188,EPA-83,"Naas, Co. Kildare",4,15.4875
+4196,EPA-83,"Naas, Co. Kildare",5,8.419677419354839
+4227,EPA-83,"Naas, Co. Kildare",6,35.063
+4257,EPA-83,"Naas, Co. Kildare",7,7.288695652173914
+4280,EPA-83,"Naas, Co. Kildare",8,8.834516129032258
+4311,EPA-83,"Naas, Co. Kildare",9,11.559
+4341,EPA-83,"Naas, Co. Kildare",10,12.1571875
+4373,EPA-83,"Naas, Co. Kildare",11,22.467
+4403,EPA-83,"Naas, Co. Kildare",12,37.75096774193548
+4434,EPA-83,"Naas, Co. Kildare",1,32.82354838709677
+4465,EPA-83,"Naas, Co. Kildare",2,16.335714285714285
+4493,EPA-83,"Naas, Co. Kildare",3,32.92071428571428
+4507,EPA-85,"Henry Street, Limerick",6,13.32
+4508,EPA-85,"Henry Street, Limerick",7,8.742903225806453
+4539,EPA-85,"Henry Street, Limerick",8,9.7690625
+4571,EPA-85,"Henry Street, Limerick",9,10.396999999999998
+4601,EPA-85,"Henry Street, Limerick",10,11.950645161290323
+4632,EPA-85,"Henry Street, Limerick",11,21.153000000000002
+4662,EPA-85,"Henry Street, Limerick",12,31.49225806451613
+4693,EPA-85,"Henry Street, Limerick",1,48.75483870967742
+4724,EPA-85,"Henry Street, Limerick",2,20.32107142857143
+4752,EPA-85,"Henry Street, Limerick",3,39.355714285714285

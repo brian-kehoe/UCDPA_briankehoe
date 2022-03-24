@@ -1,0 +1,72 @@
+,label,location,latitude,longitude
+17,Station 10,"Heatherton Park, Cork",51.881867,-8.457129
+24,Station 101,Greystones Fire Station,53.14979399999999,-6.070582
+21,Station 102,"Edenderry Library, Co. Offaly",53.3425,-7.0475
+66,Station 103,"Claremorris, Co. Mayo",53.686606999999995,-9.013405
+38,Station 106,"Leixlip Library, Co. Kildare",53.37188199999999,-6.486747
+27,Station 13,"Bray, Co. Wicklow",53.187251,-6.121964
+36,Station 16,"Portlaoise, Co. Laois",53.036139,-7.288808
+3,Station 17,"Ringsend, Dublin 4",53.341787,-6.226506
+22,Station 22,"Rathmines, Dublin 6",53.322029,-6.267154
+33,Station 24,"Enniscorthy, Co. Wexford",52.50049,-6.57034
+4,Station 25,"Ennis, Co. Clare",52.843206,-8.989332000000001
+28,Station 29,"Blanchardstown, Dublin 15",53.38539,-6.369211
+25,Station 33,"Clonskeagh, Dublin 14",53.311783,-6.235325
+18,Station 34,"Dún Laoghaire, Co. Dublin",53.285993999999995,-6.132003
+2,Station 39,"People's Park, Limerick",52.65865600000001,-8.628739
+0,Station 43,Longford Town,53.725554,-7.791275
+44,Station 44,"Tallaght, Dublin 24",53.280699,-6.3588510000000005
+29,Station 46,"Finglas, Dublin 11",53.390252000000004,-6.305162
+15,Station 47,"Marino, Dublin 3",53.368097999999996,-6.22794
+40,Station 48,"Phoenix Park, Dublin 8",53.364641000000006,-6.348076
+13,Station 49,"Davitt Road, Inchicore, Dublin 12",53.336257999999994,-6.3090019999999996
+23,Station 52,"St. Anne's Park, Dublin 5",53.372904000000005,-6.17939
+47,Station 53,Roscommon Town,53.629979000000006,-8.194658
+37,Station 54,Carlow Town,52.839751,-6.931922
+30,Station 55,"Dublin Airport, Swords, Co. Dublin",53.426139,-6.239127
+14,Station 57,"St. John’s Road, Kilmainham, Dublin 8",53.345806,-6.2946029999999995
+10,Station 59,"Brownes Road, Waterford",52.246975,-7.141646000000001
+16,Station 60,"Cobh Carrignafoy, Co. Cork",51.855057,-8.287827
+6,Station 63,Wexford Opera House,52.338033,-6.462139
+55,Station 64,"Letterkenny, Co. Donegal",54.954643999999995,-7.7348419999999996
+5,Station 66,Tipperary Town,52.47934,-8.157014
+26,Station 67,"Macroom, Co. Cork",51.904843,-8.95249
+12,Station 68,"Navan, Co. Meath",53.655483,-6.68847
+7,Station 69,"Pearse Street, Dublin 2",53.345053,-6.254344000000001
+48,Station 70,"Athlone Civic Centre & Library, Co. Westmeath",53.424323,-7.937372
+39,Station 71,"Tralee Library, Co. Kerry",52.267115000000004,-9.697958
+9,Station 74,"Askeaton, Co. Limerick",52.59044599999999,-8.970514999999999
+20,Station 75,"Clonmel, Co. Tipperary",52.354597999999996,-7.698411999999999
+8,Station 76,"Dublin Port, Dublin 1",53.351627,-6.203812
+34,Station 78,Cavan Town,53.993559999999995,-7.3628
+19,Station 79,"Birr, Co. Offaly",53.09445899999999,-7.908588000000001
+50,Station 80,"Carrick-on-Shannon, Co. Leitrim",53.943999999999996,-8.0865
+32,Station 82,"Mallow, Co. Cork",52.1340485,-8.640705
+35,Station 83,"Naas, Co. Kildare",53.218113,-6.659089
+11,Station 84,"Drogheda, Co. Louth",53.732181999999995,-6.320035400000001
+1,Station 85,"Henry Street, Limerick",52.661291000000006,-8.631649000000001
+70,TNO2161,"Custom House Quay, Dublin 1",53.347863000000004,-6.243785
+61,TNO2162,"Coolock, Dublin 5",53.390542,-6.202395
+41,TNO2579,"Amiens Street, Dublin 1",53.352988,-6.2487379999999995
+31,TNO3839,"O'Connell St, Limerick",52.66385,-8.626646000000001
+64,TNO3946,"Dungarvan, Co. Waterford",52.090561,-7.620017999999999
+68,TNO3947,"Ennistymon, Co. Clare",52.940471900000006,-9.294437599999998
+54,TNO3948,"Tullamore, Co. Offaly",53.273134999999996,-7.4966531000000005
+67,TNO3951,"Abbeyfeale, Limerick",52.38613,-9.298210000000001
+42,TNO3952,Monaghan Town,54.246340000000004,-6.961403
+56,TNO3953,"Newbridge, Co. Kildare",53.18019,-6.800826
+52,TNO3954,"Mountrath, Co. Laois",53.005652100000006,-7.4686841
+63,TNO3955,"Buncranna, Co. Donegal",55.137443000000005,-7.456503
+65,TNO4157,"Thomastown, Co. Kilkenny",52.5302193,-7.1379192
+59,TNO4158,"Deansgrange, Co. Dublin",53.286763,-6.173349
+51,TNO4159,"Mullingar, Co. Westmeath",53.525156,-7.337528999999999
+57,TNO4160,"Celbridge, Co. Kildare",53.34441999999999,-6.54432
+46,TNO4324,"Lord Edward Street, Dublin 2",53.343628,-6.2701970000000005
+60,TNO4325,"Drumcondra Library, Dublin 9",53.369893999999995,-6.259124
+43,TNO4390,"TU Dublin, Dublin 7",53.357689,-6.287134
+62,TNO4436,"Donnybrook, Dublin 4",53.322562,-6.237014
+49,TNO4437,"Cabra Community College, Dublin 7",53.3687022,-6.294321599999999
+45,TNO4438,"Weaver Park, Dublin 8",53.338252000000004,-6.280805
+53,TNO4465,"Banagher, Co. Offaly",53.190239,-7.986503
+69,TNT1088,"Walkinstown Library, Dublin 12",53.318902,-6.32176
+58,TNT1296,"Ballymun Library, Dublin 9",53.390432999999994,-6.26527

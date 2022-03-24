@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a11524b20444471b30aa9565044160d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8a11524b20444471b30aa9565044160d" ></div>
+        
+</body>
+<script>    
+    
+            var map_8a11524b20444471b30aa9565044160d = L.map(
+                "map_8a11524b20444471b30aa9565044160d",
+                {
+                    center: [53.16628931944444, -7.143697347222221],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e071092a515049c5afcf038bf06ce636 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+            var circle_5c5d5e7e42e44a5f87c939dbfdaa069f = L.circle(
+                [52.338033, -6.462139],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3156.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_17c9522b6d9a4b908d31b2f6c029ee23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b038f2f36f6b40b7921b82b268aa459f = $(`<div id="html_b038f2f36f6b40b7921b82b268aa459f" style="width: 100.0%; height: 100.0%;">Wexford Opera House<br>Current PM2.5 : 31.56</div>`)[0];
+            popup_17c9522b6d9a4b908d31b2f6c029ee23.setContent(html_b038f2f36f6b40b7921b82b268aa459f);
+        
+
+        circle_5c5d5e7e42e44a5f87c939dbfdaa069f.bindPopup(popup_17c9522b6d9a4b908d31b2f6c029ee23)
+        ;
+
+        
+    
+    
+            circle_5c5d5e7e42e44a5f87c939dbfdaa069f.bindTooltip(
+                `<div>
+                     Wexford Opera House<br>Current PM2.5: 31.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2bcb3d5b88ab465290c33df20fa48a40 = L.circle(
+                [52.246975, -7.141646000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2758.89, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_7621221a6c824815821fbe2c9f9e4158 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_587ad1f7a1e04ace98488dfbb51b4030 = $(`<div id="html_587ad1f7a1e04ace98488dfbb51b4030" style="width: 100.0%; height: 100.0%;">Brownes Road, Waterford<br>Current PM2.5 : 27.59</div>`)[0];
+            popup_7621221a6c824815821fbe2c9f9e4158.setContent(html_587ad1f7a1e04ace98488dfbb51b4030);
+        
+
+        circle_2bcb3d5b88ab465290c33df20fa48a40.bindPopup(popup_7621221a6c824815821fbe2c9f9e4158)
+        ;
+
+        
+    
+    
+            circle_2bcb3d5b88ab465290c33df20fa48a40.bindTooltip(
+                `<div>
+                     Brownes Road, Waterford<br>Current PM2.5: 27.59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_92c52724bc6f4c488884b05bf9cabeff = L.circle(
+                [53.351627, -6.203812],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2733.51, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_0075a9255ad94ba1b50f39d87c2a8c1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b0ffd1bc0a584558a34a29fe39013220 = $(`<div id="html_b0ffd1bc0a584558a34a29fe39013220" style="width: 100.0%; height: 100.0%;">Dublin Port, Dublin 1<br>Current PM2.5 : 27.34</div>`)[0];
+            popup_0075a9255ad94ba1b50f39d87c2a8c1e.setContent(html_b0ffd1bc0a584558a34a29fe39013220);
+        
+
+        circle_92c52724bc6f4c488884b05bf9cabeff.bindPopup(popup_0075a9255ad94ba1b50f39d87c2a8c1e)
+        ;
+
+        
+    
+    
+            circle_92c52724bc6f4c488884b05bf9cabeff.bindTooltip(
+                `<div>
+                     Dublin Port, Dublin 1<br>Current PM2.5: 27.34
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_29553d7ec67348fc88d15abf3c3f042c = L.circle(
+                [53.280699, -6.3588510000000005],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2614.78, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_6fc308e694f04bafbe7884bd386e7c57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3153fbce38624456a72c07d009d87eb2 = $(`<div id="html_3153fbce38624456a72c07d009d87eb2" style="width: 100.0%; height: 100.0%;">Tallaght, Dublin 24<br>Current PM2.5 : 26.15</div>`)[0];
+            popup_6fc308e694f04bafbe7884bd386e7c57.setContent(html_3153fbce38624456a72c07d009d87eb2);
+        
+
+        circle_29553d7ec67348fc88d15abf3c3f042c.bindPopup(popup_6fc308e694f04bafbe7884bd386e7c57)
+        ;
+
+        
+    
+    
+            circle_29553d7ec67348fc88d15abf3c3f042c.bindTooltip(
+                `<div>
+                     Tallaght, Dublin 24<br>Current PM2.5: 26.15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b3a53142b21c4dae80fa418cf2d623c4 = L.circle(
+                [53.336257999999994, -6.3090019999999996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2559.7200000000003, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_4761bfbe9dab4487b0505df8bc4b66af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_067a1ff1ecf34bd0bb9a981955c344e5 = $(`<div id="html_067a1ff1ecf34bd0bb9a981955c344e5" style="width: 100.0%; height: 100.0%;">Davitt Road, Inchicore, Dublin 12<br>Current PM2.5 : 25.6</div>`)[0];
+            popup_4761bfbe9dab4487b0505df8bc4b66af.setContent(html_067a1ff1ecf34bd0bb9a981955c344e5);
+        
+
+        circle_b3a53142b21c4dae80fa418cf2d623c4.bindPopup(popup_4761bfbe9dab4487b0505df8bc4b66af)
+        ;
+
+        
+    
+    
+            circle_b3a53142b21c4dae80fa418cf2d623c4.bindTooltip(
+                `<div>
+                     Davitt Road, Inchicore, Dublin 12<br>Current PM2.5: 25.6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_913cbfc490324bc9a8c212549b7d9efe = L.circle(
+                [52.50049, -6.57034],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2555.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_c143eade0b3044ee91786e0f4ed4bacb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdf4980510e948cfb8b742a8c60fb87d = $(`<div id="html_bdf4980510e948cfb8b742a8c60fb87d" style="width: 100.0%; height: 100.0%;">Enniscorthy, Co. Wexford<br>Current PM2.5 : 25.55</div>`)[0];
+            popup_c143eade0b3044ee91786e0f4ed4bacb.setContent(html_bdf4980510e948cfb8b742a8c60fb87d);
+        
+
+        circle_913cbfc490324bc9a8c212549b7d9efe.bindPopup(popup_c143eade0b3044ee91786e0f4ed4bacb)
+        ;
+
+        
+    
+    
+            circle_913cbfc490324bc9a8c212549b7d9efe.bindTooltip(
+                `<div>
+                     Enniscorthy, Co. Wexford<br>Current PM2.5: 25.55
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_40a969bddd9d4292be84277a5f09f088 = L.circle(
+                [53.09445899999999, -7.908588000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2521.1400000000003, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_13e119dd86284c5a891e455d61063c68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8936a79f668420d879927dd4f1f6f9a = $(`<div id="html_b8936a79f668420d879927dd4f1f6f9a" style="width: 100.0%; height: 100.0%;">Birr, Co. Offaly<br>Current PM2.5 : 25.21</div>`)[0];
+            popup_13e119dd86284c5a891e455d61063c68.setContent(html_b8936a79f668420d879927dd4f1f6f9a);
+        
+
+        circle_40a969bddd9d4292be84277a5f09f088.bindPopup(popup_13e119dd86284c5a891e455d61063c68)
+        ;
+
+        
+    
+    
+            circle_40a969bddd9d4292be84277a5f09f088.bindTooltip(
+                `<div>
+                     Birr, Co. Offaly<br>Current PM2.5: 25.21
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ae65317570ae4d78ab63cff38f65a371 = L.circle(
+                [52.839751, -6.931922],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2512.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_328e926f409f45199da0c76075ed249f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d65f87e1c0144612b272c3deec16efb5 = $(`<div id="html_d65f87e1c0144612b272c3deec16efb5" style="width: 100.0%; height: 100.0%;">Carlow Town<br>Current PM2.5 : 25.12</div>`)[0];
+            popup_328e926f409f45199da0c76075ed249f.setContent(html_d65f87e1c0144612b272c3deec16efb5);
+        
+
+        circle_ae65317570ae4d78ab63cff38f65a371.bindPopup(popup_328e926f409f45199da0c76075ed249f)
+        ;
+
+        
+    
+    
+            circle_ae65317570ae4d78ab63cff38f65a371.bindTooltip(
+                `<div>
+                     Carlow Town<br>Current PM2.5: 25.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_94a03b2c0f4240cfa67e54e7a4ab0da6 = L.circle(
+                [53.732181999999995, -6.320035400000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2512.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_17107914c7bb494a8350c9bab0442cbe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6a4c22956404baba63eeedb73016ddc = $(`<div id="html_a6a4c22956404baba63eeedb73016ddc" style="width: 100.0%; height: 100.0%;">Drogheda, Co. Louth<br>Current PM2.5 : 25.12</div>`)[0];
+            popup_17107914c7bb494a8350c9bab0442cbe.setContent(html_a6a4c22956404baba63eeedb73016ddc);
+        
+
+        circle_94a03b2c0f4240cfa67e54e7a4ab0da6.bindPopup(popup_17107914c7bb494a8350c9bab0442cbe)
+        ;
+
+        
+    
+    
+            circle_94a03b2c0f4240cfa67e54e7a4ab0da6.bindTooltip(
+                `<div>
+                     Drogheda, Co. Louth<br>Current PM2.5: 25.12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3ecc3edcd99d483cbe1bfe1d0dfcdb0b = L.circle(
+                [53.341787, -6.226506],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2474.37, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3729511974bf47858d443a37effd6995 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7678fbc963749619d1d992752936cbf = $(`<div id="html_a7678fbc963749619d1d992752936cbf" style="width: 100.0%; height: 100.0%;">Ringsend, Dublin 4<br>Current PM2.5 : 24.74</div>`)[0];
+            popup_3729511974bf47858d443a37effd6995.setContent(html_a7678fbc963749619d1d992752936cbf);
+        
+
+        circle_3ecc3edcd99d483cbe1bfe1d0dfcdb0b.bindPopup(popup_3729511974bf47858d443a37effd6995)
+        ;
+
+        
+    
+    
+            circle_3ecc3edcd99d483cbe1bfe1d0dfcdb0b.bindTooltip(
+                `<div>
+                     Ringsend, Dublin 4<br>Current PM2.5: 24.74
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b2592743c68c459caf19e5d9a23a845c = L.circle(
+                [53.655483, -6.68847],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2460.5299999999997, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_6d8b42eae3c743b5900386ad8de718ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_776d62d8e88646019605bc9b3adf432c = $(`<div id="html_776d62d8e88646019605bc9b3adf432c" style="width: 100.0%; height: 100.0%;">Navan, Co. Meath<br>Current PM2.5 : 24.61</div>`)[0];
+            popup_6d8b42eae3c743b5900386ad8de718ac.setContent(html_776d62d8e88646019605bc9b3adf432c);
+        
+
+        circle_b2592743c68c459caf19e5d9a23a845c.bindPopup(popup_6d8b42eae3c743b5900386ad8de718ac)
+        ;
+
+        
+    
+    
+            circle_b2592743c68c459caf19e5d9a23a845c.bindTooltip(
+                `<div>
+                     Navan, Co. Meath<br>Current PM2.5: 24.61
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_56ee5721aef34ece8d6b313d818120dc = L.circle(
+                [53.390252000000004, -6.305162],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2343.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_ac0613a2a2914bb2a15468aa6275e92e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8929ac82e7aa4d3e8f3cb89cb8a1356d = $(`<div id="html_8929ac82e7aa4d3e8f3cb89cb8a1356d" style="width: 100.0%; height: 100.0%;">Finglas, Dublin 11<br>Current PM2.5 : 23.43</div>`)[0];
+            popup_ac0613a2a2914bb2a15468aa6275e92e.setContent(html_8929ac82e7aa4d3e8f3cb89cb8a1356d);
+        
+
+        circle_56ee5721aef34ece8d6b313d818120dc.bindPopup(popup_ac0613a2a2914bb2a15468aa6275e92e)
+        ;
+
+        
+    
+    
+            circle_56ee5721aef34ece8d6b313d818120dc.bindTooltip(
+                `<div>
+                     Finglas, Dublin 11<br>Current PM2.5: 23.43
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9c0f43ca61974fd09d83d0d65ac5191b = L.circle(
+                [53.285993999999995, -6.132003],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2286.42, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_63506ec3db454bdbbe9f11dbf545faea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b776f5da60ed4cd68f12c3567bbec10c = $(`<div id="html_b776f5da60ed4cd68f12c3567bbec10c" style="width: 100.0%; height: 100.0%;">Dún Laoghaire, Co. Dublin<br>Current PM2.5 : 22.86</div>`)[0];
+            popup_63506ec3db454bdbbe9f11dbf545faea.setContent(html_b776f5da60ed4cd68f12c3567bbec10c);
+        
+
+        circle_9c0f43ca61974fd09d83d0d65ac5191b.bindPopup(popup_63506ec3db454bdbbe9f11dbf545faea)
+        ;
+
+        
+    
+    
+            circle_9c0f43ca61974fd09d83d0d65ac5191b.bindTooltip(
+                `<div>
+                     Dún Laoghaire, Co. Dublin<br>Current PM2.5: 22.86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1203035c0eff49ae99441111b5533138 = L.circle(
+                [53.036139, -7.288808],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2278.95, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_fe5ddf3aaed74156b8bfec09fdb8e028 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9cb09e3fcb9a46719bf292a940eb6a3c = $(`<div id="html_9cb09e3fcb9a46719bf292a940eb6a3c" style="width: 100.0%; height: 100.0%;">Portlaoise, Co. Laois<br>Current PM2.5 : 22.79</div>`)[0];
+            popup_fe5ddf3aaed74156b8bfec09fdb8e028.setContent(html_9cb09e3fcb9a46719bf292a940eb6a3c);
+        
+
+        circle_1203035c0eff49ae99441111b5533138.bindPopup(popup_fe5ddf3aaed74156b8bfec09fdb8e028)
+        ;
+
+        
+    
+    
+            circle_1203035c0eff49ae99441111b5533138.bindTooltip(
+                `<div>
+                     Portlaoise, Co. Laois<br>Current PM2.5: 22.79
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d282107f8f3d4aa7bf35d3afd6239d6c = L.circle(
+                [53.311783, -6.235325],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2138.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_ca6ca1d2ded84deaabdb20d1b1486e93 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15cd8bdf83864187b1c20f192de543b0 = $(`<div id="html_15cd8bdf83864187b1c20f192de543b0" style="width: 100.0%; height: 100.0%;">Clonskeagh, Dublin 14<br>Current PM2.5 : 21.38</div>`)[0];
+            popup_ca6ca1d2ded84deaabdb20d1b1486e93.setContent(html_15cd8bdf83864187b1c20f192de543b0);
+        
+
+        circle_d282107f8f3d4aa7bf35d3afd6239d6c.bindPopup(popup_ca6ca1d2ded84deaabdb20d1b1486e93)
+        ;
+
+        
+    
+    
+            circle_d282107f8f3d4aa7bf35d3afd6239d6c.bindTooltip(
+                `<div>
+                     Clonskeagh, Dublin 14<br>Current PM2.5: 21.38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_56e3f2ebab304973b6c195516de676b5 = L.circle(
+                [53.38539, -6.369211],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2110.61, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_19a73d10a7264dae848e114f7e37909a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8e16c0544614ab7850e4dfcb41a903a = $(`<div id="html_a8e16c0544614ab7850e4dfcb41a903a" style="width: 100.0%; height: 100.0%;">Blanchardstown, Dublin 15<br>Current PM2.5 : 21.11</div>`)[0];
+            popup_19a73d10a7264dae848e114f7e37909a.setContent(html_a8e16c0544614ab7850e4dfcb41a903a);
+        
+
+        circle_56e3f2ebab304973b6c195516de676b5.bindPopup(popup_19a73d10a7264dae848e114f7e37909a)
+        ;
+
+        
+    
+    
+            circle_56e3f2ebab304973b6c195516de676b5.bindTooltip(
+                `<div>
+                     Blanchardstown, Dublin 15<br>Current PM2.5: 21.11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c877babb4c744abab7817ca5b70e8bbd = L.circle(
+                [53.3425, -7.0475],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2090.42, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_9b644ac2237b4f32afc1c19f2f1c1353 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65fa2017768e4a608e9b2e278ec49fd9 = $(`<div id="html_65fa2017768e4a608e9b2e278ec49fd9" style="width: 100.0%; height: 100.0%;">Edenderry Library, Co. Offaly<br>Current PM2.5 : 20.9</div>`)[0];
+            popup_9b644ac2237b4f32afc1c19f2f1c1353.setContent(html_65fa2017768e4a608e9b2e278ec49fd9);
+        
+
+        circle_c877babb4c744abab7817ca5b70e8bbd.bindPopup(popup_9b644ac2237b4f32afc1c19f2f1c1353)
+        ;
+
+        
+    
+    
+            circle_c877babb4c744abab7817ca5b70e8bbd.bindTooltip(
+                `<div>
+                     Edenderry Library, Co. Offaly<br>Current PM2.5: 20.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e27c8f05f7d34a9385dbf76ee99fc29e = L.circle(
+                [53.345806, -6.2946029999999995],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2089.78, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_9888fe8706544d7da880e4436bc91f9d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e804cfc2194426586c6845942ade5a0 = $(`<div id="html_2e804cfc2194426586c6845942ade5a0" style="width: 100.0%; height: 100.0%;">St. John’s Road, Kilmainham, Dublin 8<br>Current PM2.5 : 20.9</div>`)[0];
+            popup_9888fe8706544d7da880e4436bc91f9d.setContent(html_2e804cfc2194426586c6845942ade5a0);
+        
+
+        circle_e27c8f05f7d34a9385dbf76ee99fc29e.bindPopup(popup_9888fe8706544d7da880e4436bc91f9d)
+        ;
+
+        
+    
+    
+            circle_e27c8f05f7d34a9385dbf76ee99fc29e.bindTooltip(
+                `<div>
+                     St. John’s Road, Kilmainham, Dublin 8<br>Current PM2.5: 20.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_471d08d7d61d4a329fa3789f7ab8a685 = L.circle(
+                [53.345053, -6.254344000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2058.01, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3646f46c3aa3457b945a7adf10367857 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccb201c6e3904c2cb03a5eeecc0f3d4b = $(`<div id="html_ccb201c6e3904c2cb03a5eeecc0f3d4b" style="width: 100.0%; height: 100.0%;">Pearse Street, Dublin 2<br>Current PM2.5 : 20.58</div>`)[0];
+            popup_3646f46c3aa3457b945a7adf10367857.setContent(html_ccb201c6e3904c2cb03a5eeecc0f3d4b);
+        
+
+        circle_471d08d7d61d4a329fa3789f7ab8a685.bindPopup(popup_3646f46c3aa3457b945a7adf10367857)
+        ;
+
+        
+    
+    
+            circle_471d08d7d61d4a329fa3789f7ab8a685.bindTooltip(
+                `<div>
+                     Pearse Street, Dublin 2<br>Current PM2.5: 20.58
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_fe28212910d448c5857f1adcafbd317a = L.circle(
+                [53.426139, -6.239127],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1972.1599999999999, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_b9a11407865d4a44abe0d0065d0f9a00 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5e6edfe5d55b4455925a49df58c1323a = $(`<div id="html_5e6edfe5d55b4455925a49df58c1323a" style="width: 100.0%; height: 100.0%;">Dublin Airport, Swords, Co. Dublin<br>Current PM2.5 : 19.72</div>`)[0];
+            popup_b9a11407865d4a44abe0d0065d0f9a00.setContent(html_5e6edfe5d55b4455925a49df58c1323a);
+        
+
+        circle_fe28212910d448c5857f1adcafbd317a.bindPopup(popup_b9a11407865d4a44abe0d0065d0f9a00)
+        ;
+
+        
+    
+    
+            circle_fe28212910d448c5857f1adcafbd317a.bindTooltip(
+                `<div>
+                     Dublin Airport, Swords, Co. Dublin<br>Current PM2.5: 19.72
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d02ae7e1e3c4e8d838acb03c689c362 = L.circle(
+                [51.855057, -8.287827],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1890.4399999999998, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_ff4abc6d9002440fa7fcd01ecf8b9082 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f254d76c29f1465c8fbe6a33512a2381 = $(`<div id="html_f254d76c29f1465c8fbe6a33512a2381" style="width: 100.0%; height: 100.0%;">Cobh Carrignafoy, Co. Cork<br>Current PM2.5 : 18.9</div>`)[0];
+            popup_ff4abc6d9002440fa7fcd01ecf8b9082.setContent(html_f254d76c29f1465c8fbe6a33512a2381);
+        
+
+        circle_9d02ae7e1e3c4e8d838acb03c689c362.bindPopup(popup_ff4abc6d9002440fa7fcd01ecf8b9082)
+        ;
+
+        
+    
+    
+            circle_9d02ae7e1e3c4e8d838acb03c689c362.bindTooltip(
+                `<div>
+                     Cobh Carrignafoy, Co. Cork<br>Current PM2.5: 18.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_44201ce7acd94d94b7b25d04bc6f379d = L.circle(
+                [52.354597999999996, -7.698411999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1848.9999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_6ac230e175384583a5e82da611db5f1b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10698258137b4a98a21a3b7389459b92 = $(`<div id="html_10698258137b4a98a21a3b7389459b92" style="width: 100.0%; height: 100.0%;">Clonmel, Co. Tipperary<br>Current PM2.5 : 18.49</div>`)[0];
+            popup_6ac230e175384583a5e82da611db5f1b.setContent(html_10698258137b4a98a21a3b7389459b92);
+        
+
+        circle_44201ce7acd94d94b7b25d04bc6f379d.bindPopup(popup_6ac230e175384583a5e82da611db5f1b)
+        ;
+
+        
+    
+    
+            circle_44201ce7acd94d94b7b25d04bc6f379d.bindTooltip(
+                `<div>
+                     Clonmel, Co. Tipperary<br>Current PM2.5: 18.49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1630b65652f948569aefb6cc8155e5f8 = L.circle(
+                [53.424323, -7.937372],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1662.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3ba37f61d2b647ec9f3df6f8168c5773 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5603bdcc83fa4faf81cee0b81f9c8997 = $(`<div id="html_5603bdcc83fa4faf81cee0b81f9c8997" style="width: 100.0%; height: 100.0%;">Athlone Civic Centre & Library, Co. Westmeath<br>Current PM2.5 : 16.62</div>`)[0];
+            popup_3ba37f61d2b647ec9f3df6f8168c5773.setContent(html_5603bdcc83fa4faf81cee0b81f9c8997);
+        
+
+        circle_1630b65652f948569aefb6cc8155e5f8.bindPopup(popup_3ba37f61d2b647ec9f3df6f8168c5773)
+        ;
+
+        
+    
+    
+            circle_1630b65652f948569aefb6cc8155e5f8.bindTooltip(
+                `<div>
+                     Athlone Civic Centre & Library, Co. Westmeath<br>Current PM2.5: 16.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_641e032a65b84677874441d4a50dc0fd = L.circle(
+                [53.368097999999996, -6.22794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1648.9999999999998, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_012d3637dc2848738e7fc8ac5736d14c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec860186ef714923beea90de87bda7be = $(`<div id="html_ec860186ef714923beea90de87bda7be" style="width: 100.0%; height: 100.0%;">Marino, Dublin 3<br>Current PM2.5 : 16.49</div>`)[0];
+            popup_012d3637dc2848738e7fc8ac5736d14c.setContent(html_ec860186ef714923beea90de87bda7be);
+        
+
+        circle_641e032a65b84677874441d4a50dc0fd.bindPopup(popup_012d3637dc2848738e7fc8ac5736d14c)
+        ;
+
+        
+    
+    
+            circle_641e032a65b84677874441d4a50dc0fd.bindTooltip(
+                `<div>
+                     Marino, Dublin 3<br>Current PM2.5: 16.49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_67bcafe563fd4f8b88c822ee4e1c2322 = L.circle(
+                [53.993559999999995, -7.3628],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1642.0000000000002, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3238eea415f849288a8a64aad3f2e70d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75bbc7b6a3114551a8ee4b5eb0c6a2c4 = $(`<div id="html_75bbc7b6a3114551a8ee4b5eb0c6a2c4" style="width: 100.0%; height: 100.0%;">Cavan Town<br>Current PM2.5 : 16.42</div>`)[0];
+            popup_3238eea415f849288a8a64aad3f2e70d.setContent(html_75bbc7b6a3114551a8ee4b5eb0c6a2c4);
+        
+
+        circle_67bcafe563fd4f8b88c822ee4e1c2322.bindPopup(popup_3238eea415f849288a8a64aad3f2e70d)
+        ;
+
+        
+    
+    
+            circle_67bcafe563fd4f8b88c822ee4e1c2322.bindTooltip(
+                `<div>
+                     Cavan Town<br>Current PM2.5: 16.42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_841c503761bc471c888fac07541c89af = L.circle(
+                [53.37188199999999, -6.486747],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1587.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3f945abfe97a4dfc80cac21112056435 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_394516e034ef497b88fc00e1edf13da6 = $(`<div id="html_394516e034ef497b88fc00e1edf13da6" style="width: 100.0%; height: 100.0%;">Leixlip Library, Co. Kildare<br>Current PM2.5 : 15.87</div>`)[0];
+            popup_3f945abfe97a4dfc80cac21112056435.setContent(html_394516e034ef497b88fc00e1edf13da6);
+        
+
+        circle_841c503761bc471c888fac07541c89af.bindPopup(popup_3f945abfe97a4dfc80cac21112056435)
+        ;
+
+        
+    
+    
+            circle_841c503761bc471c888fac07541c89af.bindTooltip(
+                `<div>
+                     Leixlip Library, Co. Kildare<br>Current PM2.5: 15.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_373b27d05a2f4faea6fe90cea9952f62 = L.circle(
+                [53.14979399999999, -6.070582],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1577.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_1783fecbc0c844e9be783db1e0af17d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee8509d23e6d48f5b1e3d3ee20b63c41 = $(`<div id="html_ee8509d23e6d48f5b1e3d3ee20b63c41" style="width: 100.0%; height: 100.0%;">Greystones Fire Station<br>Current PM2.5 : 15.77</div>`)[0];
+            popup_1783fecbc0c844e9be783db1e0af17d2.setContent(html_ee8509d23e6d48f5b1e3d3ee20b63c41);
+        
+
+        circle_373b27d05a2f4faea6fe90cea9952f62.bindPopup(popup_1783fecbc0c844e9be783db1e0af17d2)
+        ;
+
+        
+    
+    
+            circle_373b27d05a2f4faea6fe90cea9952f62.bindTooltip(
+                `<div>
+                     Greystones Fire Station<br>Current PM2.5: 15.77
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_045640898fbc4efea6a31f04d6f7ed52 = L.circle(
+                [53.322029, -6.267154],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1562.9099999999999, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_b3108213e1d248e1b0b6877d26636076 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f438575bba641e08799632cf3471c56 = $(`<div id="html_4f438575bba641e08799632cf3471c56" style="width: 100.0%; height: 100.0%;">Rathmines, Dublin 6<br>Current PM2.5 : 15.63</div>`)[0];
+            popup_b3108213e1d248e1b0b6877d26636076.setContent(html_4f438575bba641e08799632cf3471c56);
+        
+
+        circle_045640898fbc4efea6a31f04d6f7ed52.bindPopup(popup_b3108213e1d248e1b0b6877d26636076)
+        ;
+
+        
+    
+    
+            circle_045640898fbc4efea6a31f04d6f7ed52.bindTooltip(
+                `<div>
+                     Rathmines, Dublin 6<br>Current PM2.5: 15.63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9410acf4960a4085ad421f85ffa06298 = L.circle(
+                [53.372904000000005, -6.17939],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1548.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_42ddf37837a7454bb36fa723074b3dca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68c1a8290761411dbae7d8f4b1ebe27e = $(`<div id="html_68c1a8290761411dbae7d8f4b1ebe27e" style="width: 100.0%; height: 100.0%;">St. Anne's Park, Dublin 5<br>Current PM2.5 : 15.48</div>`)[0];
+            popup_42ddf37837a7454bb36fa723074b3dca.setContent(html_68c1a8290761411dbae7d8f4b1ebe27e);
+        
+
+        circle_9410acf4960a4085ad421f85ffa06298.bindPopup(popup_42ddf37837a7454bb36fa723074b3dca)
+        ;
+
+        
+    
+    
+            circle_9410acf4960a4085ad421f85ffa06298.bindTooltip(
+                `<div>
+                     St. Anne's Park, Dublin 5<br>Current PM2.5: 15.48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_00fa04173b0c47cd98a0cdc4086ccfe7 = L.circle(
+                [53.943999999999996, -8.0865],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1544.97, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_1e7cac60e2bd45ecb57b1c0e296c5a9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d24d0ade3774b64a46039c07af01290 = $(`<div id="html_9d24d0ade3774b64a46039c07af01290" style="width: 100.0%; height: 100.0%;">Carrick-on-Shannon, Co. Leitrim<br>Current PM2.5 : 15.45</div>`)[0];
+            popup_1e7cac60e2bd45ecb57b1c0e296c5a9b.setContent(html_9d24d0ade3774b64a46039c07af01290);
+        
+
+        circle_00fa04173b0c47cd98a0cdc4086ccfe7.bindPopup(popup_1e7cac60e2bd45ecb57b1c0e296c5a9b)
+        ;
+
+        
+    
+    
+            circle_00fa04173b0c47cd98a0cdc4086ccfe7.bindTooltip(
+                `<div>
+                     Carrick-on-Shannon, Co. Leitrim<br>Current PM2.5: 15.45
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f5726ea2409f468eb0e6db0c3215d660 = L.circle(
+                [52.66385, -8.626646000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1519.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_267d0495ccfc4f9eae7be7cc8415814c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b3d7f61267fb4034b72a07bd5a856d49 = $(`<div id="html_b3d7f61267fb4034b72a07bd5a856d49" style="width: 100.0%; height: 100.0%;">O'Connell St, Limerick<br>Current PM2.5 : 15.19</div>`)[0];
+            popup_267d0495ccfc4f9eae7be7cc8415814c.setContent(html_b3d7f61267fb4034b72a07bd5a856d49);
+        
+
+        circle_f5726ea2409f468eb0e6db0c3215d660.bindPopup(popup_267d0495ccfc4f9eae7be7cc8415814c)
+        ;
+
+        
+    
+    
+            circle_f5726ea2409f468eb0e6db0c3215d660.bindTooltip(
+                `<div>
+                     O'Connell St, Limerick<br>Current PM2.5: 15.19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b15e288461f94f50b2b759661dc42133 = L.circle(
+                [52.65865600000001, -8.628739],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1513.06, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_6de4372da80a48e29527b310525cfe3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9701f7f983d447b197d0bfd6e56bcbe2 = $(`<div id="html_9701f7f983d447b197d0bfd6e56bcbe2" style="width: 100.0%; height: 100.0%;">People's Park, Limerick<br>Current PM2.5 : 15.13</div>`)[0];
+            popup_6de4372da80a48e29527b310525cfe3a.setContent(html_9701f7f983d447b197d0bfd6e56bcbe2);
+        
+
+        circle_b15e288461f94f50b2b759661dc42133.bindPopup(popup_6de4372da80a48e29527b310525cfe3a)
+        ;
+
+        
+    
+    
+            circle_b15e288461f94f50b2b759661dc42133.bindTooltip(
+                `<div>
+                     People's Park, Limerick<br>Current PM2.5: 15.13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_49bd5f7f508b4182adbaa9b5e3b420f2 = L.circle(
+                [53.364641000000006, -6.348076],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1487.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_c65f6d6b44cf486096cd9128b74a597a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aad9671f5f144df9961ced791509aa68 = $(`<div id="html_aad9671f5f144df9961ced791509aa68" style="width: 100.0%; height: 100.0%;">Phoenix Park, Dublin 8<br>Current PM2.5 : 14.87</div>`)[0];
+            popup_c65f6d6b44cf486096cd9128b74a597a.setContent(html_aad9671f5f144df9961ced791509aa68);
+        
+
+        circle_49bd5f7f508b4182adbaa9b5e3b420f2.bindPopup(popup_c65f6d6b44cf486096cd9128b74a597a)
+        ;
+
+        
+    
+    
+            circle_49bd5f7f508b4182adbaa9b5e3b420f2.bindTooltip(
+                `<div>
+                     Phoenix Park, Dublin 8<br>Current PM2.5: 14.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_80c10d0b859d45a394df9e8f7d9a6971 = L.circle(
+                [52.47934, -8.157014],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1471.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_75ac1bf32592412ca3c16d5c851bae9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6b2a5fbec6340408da7a381dcba2510 = $(`<div id="html_e6b2a5fbec6340408da7a381dcba2510" style="width: 100.0%; height: 100.0%;">Tipperary Town<br>Current PM2.5 : 14.71</div>`)[0];
+            popup_75ac1bf32592412ca3c16d5c851bae9b.setContent(html_e6b2a5fbec6340408da7a381dcba2510);
+        
+
+        circle_80c10d0b859d45a394df9e8f7d9a6971.bindPopup(popup_75ac1bf32592412ca3c16d5c851bae9b)
+        ;
+
+        
+    
+    
+            circle_80c10d0b859d45a394df9e8f7d9a6971.bindTooltip(
+                `<div>
+                     Tipperary Town<br>Current PM2.5: 14.71
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e275261a6c1541deac895b4e92b526e7 = L.circle(
+                [53.218113, -6.659089],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1467.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_57bf8bf7ace547afb6026008617e8fe1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_058933d7ee9f4bd2b25ab8b553a74532 = $(`<div id="html_058933d7ee9f4bd2b25ab8b553a74532" style="width: 100.0%; height: 100.0%;">Naas, Co. Kildare<br>Current PM2.5 : 14.67</div>`)[0];
+            popup_57bf8bf7ace547afb6026008617e8fe1.setContent(html_058933d7ee9f4bd2b25ab8b553a74532);
+        
+
+        circle_e275261a6c1541deac895b4e92b526e7.bindPopup(popup_57bf8bf7ace547afb6026008617e8fe1)
+        ;
+
+        
+    
+    
+            circle_e275261a6c1541deac895b4e92b526e7.bindTooltip(
+                `<div>
+                     Naas, Co. Kildare<br>Current PM2.5: 14.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f0d9feea96fa477e80752ae50281da80 = L.circle(
+                [53.187251, -6.121964],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1400.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3a4946a5a86844c59750a5fa350f7726 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_122183f834cd4c139f6b3f66cd0ab098 = $(`<div id="html_122183f834cd4c139f6b3f66cd0ab098" style="width: 100.0%; height: 100.0%;">Bray, Co. Wicklow<br>Current PM2.5 : 14.0</div>`)[0];
+            popup_3a4946a5a86844c59750a5fa350f7726.setContent(html_122183f834cd4c139f6b3f66cd0ab098);
+        
+
+        circle_f0d9feea96fa477e80752ae50281da80.bindPopup(popup_3a4946a5a86844c59750a5fa350f7726)
+        ;
+
+        
+    
+    
+            circle_f0d9feea96fa477e80752ae50281da80.bindTooltip(
+                `<div>
+                     Bray, Co. Wicklow<br>Current PM2.5: 14.0
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_eeb6f3b940364a37bce4c3d217f20c3e = L.circle(
+                [53.629979000000006, -8.194658],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1359.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_02cbebd5f86c43718888c81dd0649cb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac110e10b3574739a929dabd38e2de4b = $(`<div id="html_ac110e10b3574739a929dabd38e2de4b" style="width: 100.0%; height: 100.0%;">Roscommon Town<br>Current PM2.5 : 13.59</div>`)[0];
+            popup_02cbebd5f86c43718888c81dd0649cb4.setContent(html_ac110e10b3574739a929dabd38e2de4b);
+        
+
+        circle_eeb6f3b940364a37bce4c3d217f20c3e.bindPopup(popup_02cbebd5f86c43718888c81dd0649cb4)
+        ;
+
+        
+    
+    
+            circle_eeb6f3b940364a37bce4c3d217f20c3e.bindTooltip(
+                `<div>
+                     Roscommon Town<br>Current PM2.5: 13.59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_666acd879dc34cee97c78d235722c059 = L.circle(
+                [54.954643999999995, -7.7348419999999996],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1347.0800000000002, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_36c8bb3c691b44c28574b6ca8d834748 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4abd453ab2f740a48242f91e929ffbfd = $(`<div id="html_4abd453ab2f740a48242f91e929ffbfd" style="width: 100.0%; height: 100.0%;">Letterkenny, Co. Donegal<br>Current PM2.5 : 13.47</div>`)[0];
+            popup_36c8bb3c691b44c28574b6ca8d834748.setContent(html_4abd453ab2f740a48242f91e929ffbfd);
+        
+
+        circle_666acd879dc34cee97c78d235722c059.bindPopup(popup_36c8bb3c691b44c28574b6ca8d834748)
+        ;
+
+        
+    
+    
+            circle_666acd879dc34cee97c78d235722c059.bindTooltip(
+                `<div>
+                     Letterkenny, Co. Donegal<br>Current PM2.5: 13.47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_510c10b08a79464e99102bfbf70af85b = L.circle(
+                [53.390542, -6.202395],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1344.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_a0c04760460d47cd9ff4d51e250553e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba1ac2bc1fc34d828c43422f5f6ef575 = $(`<div id="html_ba1ac2bc1fc34d828c43422f5f6ef575" style="width: 100.0%; height: 100.0%;">Coolock, Dublin 5<br>Current PM2.5 : 13.44</div>`)[0];
+            popup_a0c04760460d47cd9ff4d51e250553e7.setContent(html_ba1ac2bc1fc34d828c43422f5f6ef575);
+        
+
+        circle_510c10b08a79464e99102bfbf70af85b.bindPopup(popup_a0c04760460d47cd9ff4d51e250553e7)
+        ;
+
+        
+    
+    
+            circle_510c10b08a79464e99102bfbf70af85b.bindTooltip(
+                `<div>
+                     Coolock, Dublin 5<br>Current PM2.5: 13.44
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_30fd6f8dac7c404cb4ac93f8b6699a08 = L.circle(
+                [52.661291000000006, -8.631649000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1332.44, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_270674b6a69c4e76ae1f65e91eb72011 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bdfe7f3f2437406eaf61b31cd00b487e = $(`<div id="html_bdfe7f3f2437406eaf61b31cd00b487e" style="width: 100.0%; height: 100.0%;">Henry Street, Limerick<br>Current PM2.5 : 13.32</div>`)[0];
+            popup_270674b6a69c4e76ae1f65e91eb72011.setContent(html_bdfe7f3f2437406eaf61b31cd00b487e);
+        
+
+        circle_30fd6f8dac7c404cb4ac93f8b6699a08.bindPopup(popup_270674b6a69c4e76ae1f65e91eb72011)
+        ;
+
+        
+    
+    
+            circle_30fd6f8dac7c404cb4ac93f8b6699a08.bindTooltip(
+                `<div>
+                     Henry Street, Limerick<br>Current PM2.5: 13.32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_76fc6eab8f8d41e99dc72d90bb49c592 = L.circle(
+                [51.881867, -8.457129],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1275.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_849879e58bc844db8e85752f688c58d0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e452c54d11cf497ea2fc4be56019148c = $(`<div id="html_e452c54d11cf497ea2fc4be56019148c" style="width: 100.0%; height: 100.0%;">Heatherton Park, Cork<br>Current PM2.5 : 12.75</div>`)[0];
+            popup_849879e58bc844db8e85752f688c58d0.setContent(html_e452c54d11cf497ea2fc4be56019148c);
+        
+
+        circle_76fc6eab8f8d41e99dc72d90bb49c592.bindPopup(popup_849879e58bc844db8e85752f688c58d0)
+        ;
+
+        
+    
+    
+            circle_76fc6eab8f8d41e99dc72d90bb49c592.bindTooltip(
+                `<div>
+                     Heatherton Park, Cork<br>Current PM2.5: 12.75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_80640a314d834d6f932a48c8422a221f = L.circle(
+                [54.246340000000004, -6.961403],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1267.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_deec8ae7913844c29fc1a98e28baa5dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b7bd466fe8e40b19b68dbc6e8b002df = $(`<div id="html_9b7bd466fe8e40b19b68dbc6e8b002df" style="width: 100.0%; height: 100.0%;">Monaghan Town<br>Current PM2.5 : 12.67</div>`)[0];
+            popup_deec8ae7913844c29fc1a98e28baa5dd.setContent(html_9b7bd466fe8e40b19b68dbc6e8b002df);
+        
+
+        circle_80640a314d834d6f932a48c8422a221f.bindPopup(popup_deec8ae7913844c29fc1a98e28baa5dd)
+        ;
+
+        
+    
+    
+            circle_80640a314d834d6f932a48c8422a221f.bindTooltip(
+                `<div>
+                     Monaghan Town<br>Current PM2.5: 12.67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_24b6f9c884214402a68f683cf7edf727 = L.circle(
+                [53.340159, -6.351706],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1256.28, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_9a61b4839d3c41e8b9119c6e5f9cc827 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84552862cd134cb09387d44cb47c1c42 = $(`<div id="html_84552862cd134cb09387d44cb47c1c42" style="width: 100.0%; height: 100.0%;">Ballyfermot, Dublin 10<br>Current PM2.5 : 12.56</div>`)[0];
+            popup_9a61b4839d3c41e8b9119c6e5f9cc827.setContent(html_84552862cd134cb09387d44cb47c1c42);
+        
+
+        circle_24b6f9c884214402a68f683cf7edf727.bindPopup(popup_9a61b4839d3c41e8b9119c6e5f9cc827)
+        ;
+
+        
+    
+    
+            circle_24b6f9c884214402a68f683cf7edf727.bindTooltip(
+                `<div>
+                     Ballyfermot, Dublin 10<br>Current PM2.5: 12.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a6aff9b6e5ab4ecc9df197120b03098b = L.circle(
+                [53.005652100000006, -7.4686841],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1252.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_6df19c0407cd4cd2890691acf9dbb378 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fd1becb393b49e795af0bc137fa36cc = $(`<div id="html_4fd1becb393b49e795af0bc137fa36cc" style="width: 100.0%; height: 100.0%;">Mountrath, Co. Laois<br>Current PM2.5 : 12.52</div>`)[0];
+            popup_6df19c0407cd4cd2890691acf9dbb378.setContent(html_4fd1becb393b49e795af0bc137fa36cc);
+        
+
+        circle_a6aff9b6e5ab4ecc9df197120b03098b.bindPopup(popup_6df19c0407cd4cd2890691acf9dbb378)
+        ;
+
+        
+    
+    
+            circle_a6aff9b6e5ab4ecc9df197120b03098b.bindTooltip(
+                `<div>
+                     Mountrath, Co. Laois<br>Current PM2.5: 12.52
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_67e9a7edeca74fb9a71fa1d497dfc1f2 = L.circle(
+                [51.904843, -8.95249],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1235.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_518b2a3f87cc4611a3a0a500306719ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_450758db431a45b785e8aa0d4703d8b1 = $(`<div id="html_450758db431a45b785e8aa0d4703d8b1" style="width: 100.0%; height: 100.0%;">Macroom, Co. Cork<br>Current PM2.5 : 12.35</div>`)[0];
+            popup_518b2a3f87cc4611a3a0a500306719ed.setContent(html_450758db431a45b785e8aa0d4703d8b1);
+        
+
+        circle_67e9a7edeca74fb9a71fa1d497dfc1f2.bindPopup(popup_518b2a3f87cc4611a3a0a500306719ed)
+        ;
+
+        
+    
+    
+            circle_67e9a7edeca74fb9a71fa1d497dfc1f2.bindTooltip(
+                `<div>
+                     Macroom, Co. Cork<br>Current PM2.5: 12.35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_90db357ce29b4010a2b505f2fb16ee34 = L.circle(
+                [53.725554, -7.791275],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1162.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_0d809645c4b84591ab83e1a23f995fe4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_785614ab9dfe45679a5b8f7bb3856bd2 = $(`<div id="html_785614ab9dfe45679a5b8f7bb3856bd2" style="width: 100.0%; height: 100.0%;">Longford Town<br>Current PM2.5 : 11.62</div>`)[0];
+            popup_0d809645c4b84591ab83e1a23f995fe4.setContent(html_785614ab9dfe45679a5b8f7bb3856bd2);
+        
+
+        circle_90db357ce29b4010a2b505f2fb16ee34.bindPopup(popup_0d809645c4b84591ab83e1a23f995fe4)
+        ;
+
+        
+    
+    
+            circle_90db357ce29b4010a2b505f2fb16ee34.bindTooltip(
+                `<div>
+                     Longford Town<br>Current PM2.5: 11.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_821e7399da3646439b58908514b9b71c = L.circle(
+                [53.357689, -6.287134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1137.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_b1e5b31af4b246fea8145360293b2a82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23dcda2855264d4480c0a1b6574a8ddb = $(`<div id="html_23dcda2855264d4480c0a1b6574a8ddb" style="width: 100.0%; height: 100.0%;">TU Dublin, Dublin 7<br>Current PM2.5 : 11.37</div>`)[0];
+            popup_b1e5b31af4b246fea8145360293b2a82.setContent(html_23dcda2855264d4480c0a1b6574a8ddb);
+        
+
+        circle_821e7399da3646439b58908514b9b71c.bindPopup(popup_b1e5b31af4b246fea8145360293b2a82)
+        ;
+
+        
+    
+    
+            circle_821e7399da3646439b58908514b9b71c.bindTooltip(
+                `<div>
+                     TU Dublin, Dublin 7<br>Current PM2.5: 11.37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_03e6bb2b679341188acd9a37ba8d7730 = L.circle(
+                [53.3687022, -6.294321599999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1130.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_f3a5f1d11bcc42b2ba2ddd719eea0b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6721e14d46a4e09966a0de14cf1a354 = $(`<div id="html_c6721e14d46a4e09966a0de14cf1a354" style="width: 100.0%; height: 100.0%;">Cabra Community College, Dublin 7<br>Current PM2.5 : 11.3</div>`)[0];
+            popup_f3a5f1d11bcc42b2ba2ddd719eea0b09.setContent(html_c6721e14d46a4e09966a0de14cf1a354);
+        
+
+        circle_03e6bb2b679341188acd9a37ba8d7730.bindPopup(popup_f3a5f1d11bcc42b2ba2ddd719eea0b09)
+        ;
+
+        
+    
+    
+            circle_03e6bb2b679341188acd9a37ba8d7730.bindTooltip(
+                `<div>
+                     Cabra Community College, Dublin 7<br>Current PM2.5: 11.3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_99a1aa4414094abf8d060e84ecbe3954 = L.circle(
+                [52.267115000000004, -9.697958],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1118.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_b2ce905734444230afd078d395a143d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8e39e7fb481467197a1a7469645fee8 = $(`<div id="html_e8e39e7fb481467197a1a7469645fee8" style="width: 100.0%; height: 100.0%;">Tralee Library, Co. Kerry<br>Current PM2.5 : 11.18</div>`)[0];
+            popup_b2ce905734444230afd078d395a143d7.setContent(html_e8e39e7fb481467197a1a7469645fee8);
+        
+
+        circle_99a1aa4414094abf8d060e84ecbe3954.bindPopup(popup_b2ce905734444230afd078d395a143d7)
+        ;
+
+        
+    
+    
+            circle_99a1aa4414094abf8d060e84ecbe3954.bindTooltip(
+                `<div>
+                     Tralee Library, Co. Kerry<br>Current PM2.5: 11.18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_875da268ccf74aa0b42b9b53c794e793 = L.circle(
+                [53.369893999999995, -6.259124],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1088.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_d0cc7f4f314b45bdb8693a1836174b1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6092d24584424d83a03ef53b56213b7f = $(`<div id="html_6092d24584424d83a03ef53b56213b7f" style="width: 100.0%; height: 100.0%;">Drumcondra Library, Dublin 9<br>Current PM2.5 : 10.88</div>`)[0];
+            popup_d0cc7f4f314b45bdb8693a1836174b1c.setContent(html_6092d24584424d83a03ef53b56213b7f);
+        
+
+        circle_875da268ccf74aa0b42b9b53c794e793.bindPopup(popup_d0cc7f4f314b45bdb8693a1836174b1c)
+        ;
+
+        
+    
+    
+            circle_875da268ccf74aa0b42b9b53c794e793.bindTooltip(
+                `<div>
+                     Drumcondra Library, Dublin 9<br>Current PM2.5: 10.88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d9ae5953738a449abb717559011d376b = L.circle(
+                [53.686606999999995, -9.013405],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1073.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_0afccca045324b17954d375a1f3da985 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1a4026682ca1439ea0b2769e70fd8f3d = $(`<div id="html_1a4026682ca1439ea0b2769e70fd8f3d" style="width: 100.0%; height: 100.0%;">Claremorris, Co. Mayo<br>Current PM2.5 : 10.73</div>`)[0];
+            popup_0afccca045324b17954d375a1f3da985.setContent(html_1a4026682ca1439ea0b2769e70fd8f3d);
+        
+
+        circle_d9ae5953738a449abb717559011d376b.bindPopup(popup_0afccca045324b17954d375a1f3da985)
+        ;
+
+        
+    
+    
+            circle_d9ae5953738a449abb717559011d376b.bindTooltip(
+                `<div>
+                     Claremorris, Co. Mayo<br>Current PM2.5: 10.73
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_058f59d37d554817a1b2d328b6c7a982 = L.circle(
+                [53.338252000000004, -6.280805],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1065.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_a2663a087af94acca4dd5e67c3b7d06f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e1a0453d0b9402892a43f159b158274 = $(`<div id="html_1e1a0453d0b9402892a43f159b158274" style="width: 100.0%; height: 100.0%;">Weaver Park, Dublin 8<br>Current PM2.5 : 10.65</div>`)[0];
+            popup_a2663a087af94acca4dd5e67c3b7d06f.setContent(html_1e1a0453d0b9402892a43f159b158274);
+        
+
+        circle_058f59d37d554817a1b2d328b6c7a982.bindPopup(popup_a2663a087af94acca4dd5e67c3b7d06f)
+        ;
+
+        
+    
+    
+            circle_058f59d37d554817a1b2d328b6c7a982.bindTooltip(
+                `<div>
+                     Weaver Park, Dublin 8<br>Current PM2.5: 10.65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d94bdaafff3f4ec2b86b1202a0741916 = L.circle(
+                [53.343628, -6.2701970000000005],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1064.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_7c739341ba8f47638c62714747076ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6630b90c69e466e981dc146b631773c = $(`<div id="html_e6630b90c69e466e981dc146b631773c" style="width: 100.0%; height: 100.0%;">Lord Edward Street, Dublin 2<br>Current PM2.5 : 10.64</div>`)[0];
+            popup_7c739341ba8f47638c62714747076ac9.setContent(html_e6630b90c69e466e981dc146b631773c);
+        
+
+        circle_d94bdaafff3f4ec2b86b1202a0741916.bindPopup(popup_7c739341ba8f47638c62714747076ac9)
+        ;
+
+        
+    
+    
+            circle_d94bdaafff3f4ec2b86b1202a0741916.bindTooltip(
+                `<div>
+                     Lord Edward Street, Dublin 2<br>Current PM2.5: 10.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7b2f62fe3c25412a90a1b15e04cc22fc = L.circle(
+                [52.59044599999999, -8.970514999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1037.04, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_7347351b230f47aaaf5b458748b86c3e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dafd1fe297be49adaf1f2081f99c93a7 = $(`<div id="html_dafd1fe297be49adaf1f2081f99c93a7" style="width: 100.0%; height: 100.0%;">Askeaton, Co. Limerick<br>Current PM2.5 : 10.37</div>`)[0];
+            popup_7347351b230f47aaaf5b458748b86c3e.setContent(html_dafd1fe297be49adaf1f2081f99c93a7);
+        
+
+        circle_7b2f62fe3c25412a90a1b15e04cc22fc.bindPopup(popup_7347351b230f47aaaf5b458748b86c3e)
+        ;
+
+        
+    
+    
+            circle_7b2f62fe3c25412a90a1b15e04cc22fc.bindTooltip(
+                `<div>
+                     Askeaton, Co. Limerick<br>Current PM2.5: 10.37
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_835f3815ee454aa5839a02480e9a5672 = L.circle(
+                [53.525156, -7.337528999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 964.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_3d3caa54de8e4461836d258c681e1a4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b45a9d231984126a1c1c95d611260fc = $(`<div id="html_9b45a9d231984126a1c1c95d611260fc" style="width: 100.0%; height: 100.0%;">Mullingar, Co. Westmeath<br>Current PM2.5 : 9.64</div>`)[0];
+            popup_3d3caa54de8e4461836d258c681e1a4b.setContent(html_9b45a9d231984126a1c1c95d611260fc);
+        
+
+        circle_835f3815ee454aa5839a02480e9a5672.bindPopup(popup_3d3caa54de8e4461836d258c681e1a4b)
+        ;
+
+        
+    
+    
+            circle_835f3815ee454aa5839a02480e9a5672.bindTooltip(
+                `<div>
+                     Mullingar, Co. Westmeath<br>Current PM2.5: 9.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_de6c6aa3ef894a499a0a05e72876caeb = L.circle(
+                [53.322562, -6.237014],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 964.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_d9c4ee6f2f254707b2c001ed5c4dbf45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dba6361a8bc640a3948ead024c624ba6 = $(`<div id="html_dba6361a8bc640a3948ead024c624ba6" style="width: 100.0%; height: 100.0%;">Donnybrook, Dublin 4<br>Current PM2.5 : 9.64</div>`)[0];
+            popup_d9c4ee6f2f254707b2c001ed5c4dbf45.setContent(html_dba6361a8bc640a3948ead024c624ba6);
+        
+
+        circle_de6c6aa3ef894a499a0a05e72876caeb.bindPopup(popup_d9c4ee6f2f254707b2c001ed5c4dbf45)
+        ;
+
+        
+    
+    
+            circle_de6c6aa3ef894a499a0a05e72876caeb.bindTooltip(
+                `<div>
+                     Donnybrook, Dublin 4<br>Current PM2.5: 9.64
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_40264f28533e4b29b729ea4ffc239239 = L.circle(
+                [53.286763, -6.173349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 957.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_92498c96098a409a84904d79692dad92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc80986e19904068a23e2e57da1de9a0 = $(`<div id="html_cc80986e19904068a23e2e57da1de9a0" style="width: 100.0%; height: 100.0%;">Deansgrange, Co. Dublin<br>Current PM2.5 : 9.57</div>`)[0];
+            popup_92498c96098a409a84904d79692dad92.setContent(html_cc80986e19904068a23e2e57da1de9a0);
+        
+
+        circle_40264f28533e4b29b729ea4ffc239239.bindPopup(popup_92498c96098a409a84904d79692dad92)
+        ;
+
+        
+    
+    
+            circle_40264f28533e4b29b729ea4ffc239239.bindTooltip(
+                `<div>
+                     Deansgrange, Co. Dublin<br>Current PM2.5: 9.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bb3acf81702a4678b99da6ca0dd6a915 = L.circle(
+                [52.1340485, -8.640705],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 949.93, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_dc2d1d085ded4f3888a026aa160a0b15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4314431e55e547d7a36e2af190e1d4a2 = $(`<div id="html_4314431e55e547d7a36e2af190e1d4a2" style="width: 100.0%; height: 100.0%;">Mallow, Co. Cork<br>Current PM2.5 : 9.5</div>`)[0];
+            popup_dc2d1d085ded4f3888a026aa160a0b15.setContent(html_4314431e55e547d7a36e2af190e1d4a2);
+        
+
+        circle_bb3acf81702a4678b99da6ca0dd6a915.bindPopup(popup_dc2d1d085ded4f3888a026aa160a0b15)
+        ;
+
+        
+    
+    
+            circle_bb3acf81702a4678b99da6ca0dd6a915.bindTooltip(
+                `<div>
+                     Mallow, Co. Cork<br>Current PM2.5: 9.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5d2124b65f6e452f96cd145e4462514c = L.circle(
+                [53.352988, -6.2487379999999995],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 894.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_4fa6567f702340bea15668dc7cdc2e25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89bcf8b09a494be698d968f5ef6f007c = $(`<div id="html_89bcf8b09a494be698d968f5ef6f007c" style="width: 100.0%; height: 100.0%;">Amiens Street, Dublin 1<br>Current PM2.5 : 8.94</div>`)[0];
+            popup_4fa6567f702340bea15668dc7cdc2e25.setContent(html_89bcf8b09a494be698d968f5ef6f007c);
+        
+
+        circle_5d2124b65f6e452f96cd145e4462514c.bindPopup(popup_4fa6567f702340bea15668dc7cdc2e25)
+        ;
+
+        
+    
+    
+            circle_5d2124b65f6e452f96cd145e4462514c.bindTooltip(
+                `<div>
+                     Amiens Street, Dublin 1<br>Current PM2.5: 8.94
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3c1b2422bdcc475a969b2a911da82824 = L.circle(
+                [53.273134999999996, -7.4966531000000005],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 839.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_721a29f91ab5414f932d1face7268a3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_10579924347844fd97404e33ccf8ac79 = $(`<div id="html_10579924347844fd97404e33ccf8ac79" style="width: 100.0%; height: 100.0%;">Tullamore, Co. Offaly<br>Current PM2.5 : 8.39</div>`)[0];
+            popup_721a29f91ab5414f932d1face7268a3a.setContent(html_10579924347844fd97404e33ccf8ac79);
+        
+
+        circle_3c1b2422bdcc475a969b2a911da82824.bindPopup(popup_721a29f91ab5414f932d1face7268a3a)
+        ;
+
+        
+    
+    
+            circle_3c1b2422bdcc475a969b2a911da82824.bindTooltip(
+                `<div>
+                     Tullamore, Co. Offaly<br>Current PM2.5: 8.39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b39b6a3d672342e99264194bb38a377d = L.circle(
+                [52.940471900000006, -9.294437599999998],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 825.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_52ab4aeb1a2747129e72fde1c4a5dad2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f6530b49839490abdcb06b16fd748f4 = $(`<div id="html_4f6530b49839490abdcb06b16fd748f4" style="width: 100.0%; height: 100.0%;">Ennistymon, Co. Clare<br>Current PM2.5 : 8.25</div>`)[0];
+            popup_52ab4aeb1a2747129e72fde1c4a5dad2.setContent(html_4f6530b49839490abdcb06b16fd748f4);
+        
+
+        circle_b39b6a3d672342e99264194bb38a377d.bindPopup(popup_52ab4aeb1a2747129e72fde1c4a5dad2)
+        ;
+
+        
+    
+    
+            circle_b39b6a3d672342e99264194bb38a377d.bindTooltip(
+                `<div>
+                     Ennistymon, Co. Clare<br>Current PM2.5: 8.25
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c92ab0df29554694891d7acceabdc13a = L.circle(
+                [53.34441999999999, -6.54432],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 814.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_76c121abab2d4b2b9f7527be3262e5af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40dd275c752445e5a08eec129591ab3b = $(`<div id="html_40dd275c752445e5a08eec129591ab3b" style="width: 100.0%; height: 100.0%;">Celbridge, Co. Kildare<br>Current PM2.5 : 8.14</div>`)[0];
+            popup_76c121abab2d4b2b9f7527be3262e5af.setContent(html_40dd275c752445e5a08eec129591ab3b);
+        
+
+        circle_c92ab0df29554694891d7acceabdc13a.bindPopup(popup_76c121abab2d4b2b9f7527be3262e5af)
+        ;
+
+        
+    
+    
+            circle_c92ab0df29554694891d7acceabdc13a.bindTooltip(
+                `<div>
+                     Celbridge, Co. Kildare<br>Current PM2.5: 8.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0c02ac3ac92a47ce98dc0831517665ff = L.circle(
+                [53.18019, -6.800826],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 768.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_03e1bcfa51bd47d68a0a1a4f451cf121 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b6511e1332a44072ae21cb2b9e27769b = $(`<div id="html_b6511e1332a44072ae21cb2b9e27769b" style="width: 100.0%; height: 100.0%;">Newbridge, Co. Kildare<br>Current PM2.5 : 7.68</div>`)[0];
+            popup_03e1bcfa51bd47d68a0a1a4f451cf121.setContent(html_b6511e1332a44072ae21cb2b9e27769b);
+        
+
+        circle_0c02ac3ac92a47ce98dc0831517665ff.bindPopup(popup_03e1bcfa51bd47d68a0a1a4f451cf121)
+        ;
+
+        
+    
+    
+            circle_0c02ac3ac92a47ce98dc0831517665ff.bindTooltip(
+                `<div>
+                     Newbridge, Co. Kildare<br>Current PM2.5: 7.68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b7270c1d9f6e4df09ffd71639b4dc8e6 = L.circle(
+                [55.137443000000005, -7.456503],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 752.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_1d8747c0953d485aa3695ba51da4eb4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbe4c8c00c704e85bf7f5c260e807376 = $(`<div id="html_bbe4c8c00c704e85bf7f5c260e807376" style="width: 100.0%; height: 100.0%;">Buncranna, Co. Donegal<br>Current PM2.5 : 7.52</div>`)[0];
+            popup_1d8747c0953d485aa3695ba51da4eb4b.setContent(html_bbe4c8c00c704e85bf7f5c260e807376);
+        
+
+        circle_b7270c1d9f6e4df09ffd71639b4dc8e6.bindPopup(popup_1d8747c0953d485aa3695ba51da4eb4b)
+        ;
+
+        
+    
+    
+            circle_b7270c1d9f6e4df09ffd71639b4dc8e6.bindTooltip(
+                `<div>
+                     Buncranna, Co. Donegal<br>Current PM2.5: 7.52
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ded59c31f37b42158ea49131cd0db3b4 = L.circle(
+                [53.190239, -7.986503],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 747.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_849417ad53c44655898835500f26b3cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3a3e9413eb9473193560dbe10549593 = $(`<div id="html_f3a3e9413eb9473193560dbe10549593" style="width: 100.0%; height: 100.0%;">Banagher, Co. Offaly<br>Current PM2.5 : 7.47</div>`)[0];
+            popup_849417ad53c44655898835500f26b3cb.setContent(html_f3a3e9413eb9473193560dbe10549593);
+        
+
+        circle_ded59c31f37b42158ea49131cd0db3b4.bindPopup(popup_849417ad53c44655898835500f26b3cb)
+        ;
+
+        
+    
+    
+            circle_ded59c31f37b42158ea49131cd0db3b4.bindTooltip(
+                `<div>
+                     Banagher, Co. Offaly<br>Current PM2.5: 7.47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b95c5be057ad4101a1ec52776e0e7828 = L.circle(
+                [52.090561, -7.620017999999999],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 714.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_044ed3c4d4d1404dafe51ba71b314303 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2c26ef3aee5447184b70d00d09a7001 = $(`<div id="html_b2c26ef3aee5447184b70d00d09a7001" style="width: 100.0%; height: 100.0%;">Dungarvan, Co. Waterford<br>Current PM2.5 : 7.14</div>`)[0];
+            popup_044ed3c4d4d1404dafe51ba71b314303.setContent(html_b2c26ef3aee5447184b70d00d09a7001);
+        
+
+        circle_b95c5be057ad4101a1ec52776e0e7828.bindPopup(popup_044ed3c4d4d1404dafe51ba71b314303)
+        ;
+
+        
+    
+    
+            circle_b95c5be057ad4101a1ec52776e0e7828.bindTooltip(
+                `<div>
+                     Dungarvan, Co. Waterford<br>Current PM2.5: 7.14
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_20ff9c4ecfec48ed8344c96af7a32a4b = L.circle(
+                [53.318902, -6.32176],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 690.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_d251660e259f4938b88908bdcd7baf3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bff07e26234042da9dfb5e0661e1c75f = $(`<div id="html_bff07e26234042da9dfb5e0661e1c75f" style="width: 100.0%; height: 100.0%;">Walkinstown Library, Dublin 12<br>Current PM2.5 : 6.9</div>`)[0];
+            popup_d251660e259f4938b88908bdcd7baf3c.setContent(html_bff07e26234042da9dfb5e0661e1c75f);
+        
+
+        circle_20ff9c4ecfec48ed8344c96af7a32a4b.bindPopup(popup_d251660e259f4938b88908bdcd7baf3c)
+        ;
+
+        
+    
+    
+            circle_20ff9c4ecfec48ed8344c96af7a32a4b.bindTooltip(
+                `<div>
+                     Walkinstown Library, Dublin 12<br>Current PM2.5: 6.9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c0409be9019449759502642f404ce7be = L.circle(
+                [53.390432999999994, -6.26527],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 662.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_82861cdb131f4c35806d51fafe508364 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c3444e693ee4911a85baa33cad29e84 = $(`<div id="html_4c3444e693ee4911a85baa33cad29e84" style="width: 100.0%; height: 100.0%;">Ballymun Library, Dublin 9<br>Current PM2.5 : 6.62</div>`)[0];
+            popup_82861cdb131f4c35806d51fafe508364.setContent(html_4c3444e693ee4911a85baa33cad29e84);
+        
+
+        circle_c0409be9019449759502642f404ce7be.bindPopup(popup_82861cdb131f4c35806d51fafe508364)
+        ;
+
+        
+    
+    
+            circle_c0409be9019449759502642f404ce7be.bindTooltip(
+                `<div>
+                     Ballymun Library, Dublin 9<br>Current PM2.5: 6.62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_34a17dcc6a1f4d9eac4bf3b5cf1e61b5 = L.circle(
+                [52.5302193, -7.1379192],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 634.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_d166d4fcec1a4238a24213fc383e54a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c72970d267c446529b9a6da9d520baae = $(`<div id="html_c72970d267c446529b9a6da9d520baae" style="width: 100.0%; height: 100.0%;">Thomastown, Co. Kilkenny<br>Current PM2.5 : 6.34</div>`)[0];
+            popup_d166d4fcec1a4238a24213fc383e54a1.setContent(html_c72970d267c446529b9a6da9d520baae);
+        
+
+        circle_34a17dcc6a1f4d9eac4bf3b5cf1e61b5.bindPopup(popup_d166d4fcec1a4238a24213fc383e54a1)
+        ;
+
+        
+    
+    
+            circle_34a17dcc6a1f4d9eac4bf3b5cf1e61b5.bindTooltip(
+                `<div>
+                     Thomastown, Co. Kilkenny<br>Current PM2.5: 6.34
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_476ae2a6c7144d848660535d39ded691 = L.circle(
+                [52.38613, -9.298210000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 619.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_47bde25164c448d58da1fad21698c005 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_013294782e3740c2a5476afe50b2daab = $(`<div id="html_013294782e3740c2a5476afe50b2daab" style="width: 100.0%; height: 100.0%;">Abbeyfeale, Limerick<br>Current PM2.5 : 6.19</div>`)[0];
+            popup_47bde25164c448d58da1fad21698c005.setContent(html_013294782e3740c2a5476afe50b2daab);
+        
+
+        circle_476ae2a6c7144d848660535d39ded691.bindPopup(popup_47bde25164c448d58da1fad21698c005)
+        ;
+
+        
+    
+    
+            circle_476ae2a6c7144d848660535d39ded691.bindTooltip(
+                `<div>
+                     Abbeyfeale, Limerick<br>Current PM2.5: 6.19
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5f3b6115c7e7465f82dddfc2a12d7c54 = L.circle(
+                [53.347863000000004, -6.243785],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 158.0, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_919149e62d27469490a166dabe0a118c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ba6b1de98094424b4df5f2c80a9d15a = $(`<div id="html_6ba6b1de98094424b4df5f2c80a9d15a" style="width: 100.0%; height: 100.0%;">Custom House Quay, Dublin 1<br>Current PM2.5 : 1.58</div>`)[0];
+            popup_919149e62d27469490a166dabe0a118c.setContent(html_6ba6b1de98094424b4df5f2c80a9d15a);
+        
+
+        circle_5f3b6115c7e7465f82dddfc2a12d7c54.bindPopup(popup_919149e62d27469490a166dabe0a118c)
+        ;
+
+        
+    
+    
+            circle_5f3b6115c7e7465f82dddfc2a12d7c54.bindTooltip(
+                `<div>
+                     Custom House Quay, Dublin 1<br>Current PM2.5: 1.58
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e1ad32c879ef4f81a21ee750dc47a3f8 = L.circle(
+                [52.843206, -8.989332000000001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2263.25, "stroke": true, "weight": 3}
+            ).addTo(map_8a11524b20444471b30aa9565044160d);
+        
+    
+        var popup_e0ec02cd744340f48cda8cbf5e956606 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdbc6cd43b1a4950b11f91197c90a029 = $(`<div id="html_fdbc6cd43b1a4950b11f91197c90a029" style="width: 100.0%; height: 100.0%;">Ennis, Co. Clare<br>Current PM2.5 : 22.63</div>`)[0];
+            popup_e0ec02cd744340f48cda8cbf5e956606.setContent(html_fdbc6cd43b1a4950b11f91197c90a029);
+        
+
+        circle_e1ad32c879ef4f81a21ee750dc47a3f8.bindPopup(popup_e0ec02cd744340f48cda8cbf5e956606)
+        ;
+
+        
+    
+    
+            circle_e1ad32c879ef4f81a21ee750dc47a3f8.bindTooltip(
+                `<div>
+                     Ennis, Co. Clare<br>Current PM2.5: 22.63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

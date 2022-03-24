@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3b18ace995b54edda950c11cf3351a96 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3b18ace995b54edda950c11cf3351a96" ></div>
+        
+</body>
+<script>    
+    
+            var map_3b18ace995b54edda950c11cf3351a96 = L.map(
+                "map_3b18ace995b54edda950c11cf3351a96",
+                {
+                    center: [52.947783924999996, -7.669015200000001],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b063195860248949ff88c76552d02d9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            var circle_bee37b80cd5c4a5abfcedf08aecc3686 = L.circle(
+                [54.954644, -7.734841999999999],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6048.374999999999, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_bee37b80cd5c4a5abfcedf08aecc3686.bindTooltip(
+                `<div>
+                     Letterkenny, Co. Donegal<br>Max Daily PM2.5 (Mean): 60.48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_cb1a5e88095940c6a264647024b051be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_425df17c01cb4c91975c8264930bf7b0 = $(`<div id="html_425df17c01cb4c91975c8264930bf7b0" style="width: 100.0%; height: 100.0%;">     <iframe src="fig0.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_cb1a5e88095940c6a264647024b051be.setContent(html_425df17c01cb4c91975c8264930bf7b0);
+        
+
+        circle_bee37b80cd5c4a5abfcedf08aecc3686.bindPopup(popup_cb1a5e88095940c6a264647024b051be)
+        ;
+
+        
+    
+    
+            var circle_64489f44f16847c48d1242f6a10303b5 = L.circle(
+                [53.336258, -6.309002],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4222.5, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_64489f44f16847c48d1242f6a10303b5.bindTooltip(
+                `<div>
+                     Davitt Road, Inchicore, Dublin 12<br>Max Daily PM2.5 (Mean): 42.22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_17667bad9498439b8b603c1b7ce858de = L.popup({"maxWidth": "100%"});
+
+        
+            var html_858496076c774d02a6c33c98a2932df9 = $(`<div id="html_858496076c774d02a6c33c98a2932df9" style="width: 100.0%; height: 100.0%;">     <iframe src="fig1.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_17667bad9498439b8b603c1b7ce858de.setContent(html_858496076c774d02a6c33c98a2932df9);
+        
+
+        circle_64489f44f16847c48d1242f6a10303b5.bindPopup(popup_17667bad9498439b8b603c1b7ce858de)
+        ;
+
+        
+    
+    
+            var circle_6028be71093347d696785416870667f9 = L.circle(
+                [52.246975, -7.1416460000000015],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7705.708333333331, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_6028be71093347d696785416870667f9.bindTooltip(
+                `<div>
+                     Brownes Road, Waterford<br>Max Daily PM2.5 (Mean): 77.06
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_87e6c269c2c8493ba8f59e32ee0c40bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daa2a41d7e794208a99ce68451e21553 = $(`<div id="html_daa2a41d7e794208a99ce68451e21553" style="width: 100.0%; height: 100.0%;">     <iframe src="fig2.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_87e6c269c2c8493ba8f59e32ee0c40bb.setContent(html_daa2a41d7e794208a99ce68451e21553);
+        
+
+        circle_6028be71093347d696785416870667f9.bindPopup(popup_87e6c269c2c8493ba8f59e32ee0c40bb)
+        ;
+
+        
+    
+    
+            var circle_0a1663578dfe4da78cc6a8a1cfb32931 = L.circle(
+                [52.338033, -6.462139],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5750.25, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_0a1663578dfe4da78cc6a8a1cfb32931.bindTooltip(
+                `<div>
+                     Wexford Opera House<br>Max Daily PM2.5 (Mean): 57.5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_7e4465ad598640c4908def58e873a06a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ed36a905ba54395a0a764cee0512631 = $(`<div id="html_4ed36a905ba54395a0a764cee0512631" style="width: 100.0%; height: 100.0%;">     <iframe src="fig3.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_7e4465ad598640c4908def58e873a06a.setContent(html_4ed36a905ba54395a0a764cee0512631);
+        
+
+        circle_0a1663578dfe4da78cc6a8a1cfb32931.bindPopup(popup_7e4465ad598640c4908def58e873a06a)
+        ;
+
+        
+    
+    
+            var circle_f8f0b604d2694ce485ee1496c045f586 = L.circle(
+                [51.904843, -8.95249],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5559.208333333334, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_f8f0b604d2694ce485ee1496c045f586.bindTooltip(
+                `<div>
+                     Macroom, Co. Cork<br>Max Daily PM2.5 (Mean): 55.59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_915e43b2fe0649b789fa6aa26e9fa420 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d1a78678c0d42089d5927a62ac1d26b = $(`<div id="html_3d1a78678c0d42089d5927a62ac1d26b" style="width: 100.0%; height: 100.0%;">     <iframe src="fig4.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_915e43b2fe0649b789fa6aa26e9fa420.setContent(html_3d1a78678c0d42089d5927a62ac1d26b);
+        
+
+        circle_f8f0b604d2694ce485ee1496c045f586.bindPopup(popup_915e43b2fe0649b789fa6aa26e9fa420)
+        ;
+
+        
+    
+    
+            var circle_8ac5a7ac2e3945e589c0f7da0344012e = L.circle(
+                [52.50049, -6.57034],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6526.333333333334, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_8ac5a7ac2e3945e589c0f7da0344012e.bindTooltip(
+                `<div>
+                     Enniscorthy, Co. Wexford<br>Max Daily PM2.5 (Mean): 65.26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_b3e049b1e2af4b56909bc6cb792a0878 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50e9dea211c44b96848c87d4728e0fad = $(`<div id="html_50e9dea211c44b96848c87d4728e0fad" style="width: 100.0%; height: 100.0%;">     <iframe src="fig5.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_b3e049b1e2af4b56909bc6cb792a0878.setContent(html_50e9dea211c44b96848c87d4728e0fad);
+        
+
+        circle_8ac5a7ac2e3945e589c0f7da0344012e.bindPopup(popup_b3e049b1e2af4b56909bc6cb792a0878)
+        ;
+
+        
+    
+    
+            var circle_4f00ebcbf08a446ba1ff8572b0524d77 = L.circle(
+                [53.424323, -7.937372],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4550.916666666666, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_4f00ebcbf08a446ba1ff8572b0524d77.bindTooltip(
+                `<div>
+                     Athlone Civic Centre & Library, Co. Westmeath<br>Max Daily PM2.5 (Mean): 45.51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_de163bc728c74aeeb3141ca610d5b573 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf9d523c55d04003a5e8c0c014361419 = $(`<div id="html_cf9d523c55d04003a5e8c0c014361419" style="width: 100.0%; height: 100.0%;">     <iframe src="fig6.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_de163bc728c74aeeb3141ca610d5b573.setContent(html_cf9d523c55d04003a5e8c0c014361419);
+        
+
+        circle_4f00ebcbf08a446ba1ff8572b0524d77.bindPopup(popup_de163bc728c74aeeb3141ca610d5b573)
+        ;
+
+        
+    
+    
+            var circle_0edc1015370745809b0986eb7b97c01f = L.circle(
+                [52.1340485, -8.640705],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3587.208333333333, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_0edc1015370745809b0986eb7b97c01f.bindTooltip(
+                `<div>
+                     Mallow, Co. Cork<br>Max Daily PM2.5 (Mean): 35.87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_3c3afd6653144328a9b36eac25a90c31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e9f2761fdf94c11a53c85a7242c8123 = $(`<div id="html_2e9f2761fdf94c11a53c85a7242c8123" style="width: 100.0%; height: 100.0%;">     <iframe src="fig7.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_3c3afd6653144328a9b36eac25a90c31.setContent(html_2e9f2761fdf94c11a53c85a7242c8123);
+        
+
+        circle_0edc1015370745809b0986eb7b97c01f.bindPopup(popup_3c3afd6653144328a9b36eac25a90c31)
+        ;
+
+        
+    
+    
+            var circle_efefdf0eb797434a8df60330776fa6de = L.circle(
+                [53.322029, -6.267154],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3625.8333333333335, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_efefdf0eb797434a8df60330776fa6de.bindTooltip(
+                `<div>
+                     Rathmines, Dublin 6<br>Max Daily PM2.5 (Mean): 36.26
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_345b35d0452445c3a69b242042cf8cc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_afe18c7d24f640a4be9f961ff97c35bf = $(`<div id="html_afe18c7d24f640a4be9f961ff97c35bf" style="width: 100.0%; height: 100.0%;">     <iframe src="fig8.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_345b35d0452445c3a69b242042cf8cc3.setContent(html_afe18c7d24f640a4be9f961ff97c35bf);
+        
+
+        circle_efefdf0eb797434a8df60330776fa6de.bindPopup(popup_345b35d0452445c3a69b242042cf8cc3)
+        ;
+
+        
+    
+    
+            var circle_4374c619e25d4528a75e0b77ccd0c742 = L.circle(
+                [52.843206, -8.989332000000003],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9957.333333333332, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_4374c619e25d4528a75e0b77ccd0c742.bindTooltip(
+                `<div>
+                     Ennis, Co. Clare<br>Max Daily PM2.5 (Mean): 99.57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_eb74064ae5464cb08535030f9a40b8c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3385f1b0cd2a44b4ae4436654a625768 = $(`<div id="html_3385f1b0cd2a44b4ae4436654a625768" style="width: 100.0%; height: 100.0%;">     <iframe src="fig9.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_eb74064ae5464cb08535030f9a40b8c3.setContent(html_3385f1b0cd2a44b4ae4436654a625768);
+        
+
+        circle_4374c619e25d4528a75e0b77ccd0c742.bindPopup(popup_eb74064ae5464cb08535030f9a40b8c3)
+        ;
+
+        
+    
+    
+            var circle_3126acce4b944b70bc8b2094137a5b28 = L.circle(
+                [52.65865600000001, -8.628739],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3862.958333333333, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_3126acce4b944b70bc8b2094137a5b28.bindTooltip(
+                `<div>
+                     People's Park, Limerick<br>Max Daily PM2.5 (Mean): 38.63
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_457564f9ad5741cc911110a3f997996f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3362178ffad9487696372d00ab2e030a = $(`<div id="html_3362178ffad9487696372d00ab2e030a" style="width: 100.0%; height: 100.0%;">     <iframe src="fig10.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_457564f9ad5741cc911110a3f997996f.setContent(html_3362178ffad9487696372d00ab2e030a);
+        
+
+        circle_3126acce4b944b70bc8b2094137a5b28.bindPopup(popup_457564f9ad5741cc911110a3f997996f)
+        ;
+
+        
+    
+    
+            var circle_2783ba5f1b3749859cbcc06fbd5181d4 = L.circle(
+                [53.036139, -7.288808],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3300.9166666666665, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_2783ba5f1b3749859cbcc06fbd5181d4.bindTooltip(
+                `<div>
+                     Portlaoise, Co. Laois<br>Max Daily PM2.5 (Mean): 33.01
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_d943dd49420742058269fa493b3af759 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3625d407e25843e5903949740fa8dac7 = $(`<div id="html_3625d407e25843e5903949740fa8dac7" style="width: 100.0%; height: 100.0%;">     <iframe src="fig11.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_d943dd49420742058269fa493b3af759.setContent(html_3625d407e25843e5903949740fa8dac7);
+        
+
+        circle_2783ba5f1b3749859cbcc06fbd5181d4.bindPopup(popup_d943dd49420742058269fa493b3af759)
+        ;
+
+        
+    
+    
+            var circle_87c37e6c6c46489291012a2a6dc29051 = L.circle(
+                [52.47934, -8.157014],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5541.625, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_87c37e6c6c46489291012a2a6dc29051.bindTooltip(
+                `<div>
+                     Tipperary Town<br>Max Daily PM2.5 (Mean): 55.42
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_d80e13b144a8444dbd1e48fae1868a62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c3a314fea2541dfa69c16c6cb8a571a = $(`<div id="html_0c3a314fea2541dfa69c16c6cb8a571a" style="width: 100.0%; height: 100.0%;">     <iframe src="fig12.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_d80e13b144a8444dbd1e48fae1868a62.setContent(html_0c3a314fea2541dfa69c16c6cb8a571a);
+        
+
+        circle_87c37e6c6c46489291012a2a6dc29051.bindPopup(popup_d80e13b144a8444dbd1e48fae1868a62)
+        ;
+
+        
+    
+    
+            var circle_690c6b40cfb5492793ac92ee413e4d54 = L.circle(
+                [52.267115, -9.697958],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5509.666666666667, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_690c6b40cfb5492793ac92ee413e4d54.bindTooltip(
+                `<div>
+                     Tralee Library, Co. Kerry<br>Max Daily PM2.5 (Mean): 55.1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_3de96e8db9524b0fbe97dd4457214d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efdf0cfe1faf44a4ade26cef4e7fcc9e = $(`<div id="html_efdf0cfe1faf44a4ade26cef4e7fcc9e" style="width: 100.0%; height: 100.0%;">     <iframe src="fig13.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_3de96e8db9524b0fbe97dd4457214d8a.setContent(html_efdf0cfe1faf44a4ade26cef4e7fcc9e);
+        
+
+        circle_690c6b40cfb5492793ac92ee413e4d54.bindPopup(popup_3de96e8db9524b0fbe97dd4457214d8a)
+        ;
+
+        
+    
+    
+            var circle_19a154d970d94a28be359c1a3b123818 = L.circle(
+                [53.725554, -7.791275],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7126.66666666667, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_19a154d970d94a28be359c1a3b123818.bindTooltip(
+                `<div>
+                     Longford Town<br>Max Daily PM2.5 (Mean): 71.27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_e44e7ffdf83a44489676dbe8d1de8e5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0a909101d8d491c845cb6f6ad49e665 = $(`<div id="html_a0a909101d8d491c845cb6f6ad49e665" style="width: 100.0%; height: 100.0%;">     <iframe src="fig14.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_e44e7ffdf83a44489676dbe8d1de8e5f.setContent(html_a0a909101d8d491c845cb6f6ad49e665);
+        
+
+        circle_19a154d970d94a28be359c1a3b123818.bindPopup(popup_e44e7ffdf83a44489676dbe8d1de8e5f)
+        ;
+
+        
+    
+    
+            var circle_c60774a826fe4654a02a6e10a2e98edc = L.circle(
+                [53.218113, -6.659089],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3855.7499999999995, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_c60774a826fe4654a02a6e10a2e98edc.bindTooltip(
+                `<div>
+                     Naas, Co. Kildare<br>Max Daily PM2.5 (Mean): 38.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_5ab829835df640f9aea72870a5a18fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccd0871465b4437292075bd608cc4562 = $(`<div id="html_ccd0871465b4437292075bd608cc4562" style="width: 100.0%; height: 100.0%;">     <iframe src="fig15.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_5ab829835df640f9aea72870a5a18fd8.setContent(html_ccd0871465b4437292075bd608cc4562);
+        
+
+        circle_c60774a826fe4654a02a6e10a2e98edc.bindPopup(popup_5ab829835df640f9aea72870a5a18fd8)
+        ;
+
+        
+    
+    
+            var circle_21a1e2d015194cd3916b2a8a8a463c23 = L.circle(
+                [52.66129100000001, -8.631649000000001],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3431.5, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_21a1e2d015194cd3916b2a8a8a463c23.bindTooltip(
+                `<div>
+                     Henry Street, Limerick<br>Max Daily PM2.5 (Mean): 34.32
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_76bcb789a73a48548918cc994ca092b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_229eacec508c4677a82e1c2db0960a1b = $(`<div id="html_229eacec508c4677a82e1c2db0960a1b" style="width: 100.0%; height: 100.0%;">     <iframe src="fig16.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_76bcb789a73a48548918cc994ca092b8.setContent(html_229eacec508c4677a82e1c2db0960a1b);
+        
+
+        circle_21a1e2d015194cd3916b2a8a8a463c23.bindPopup(popup_76bcb789a73a48548918cc994ca092b8)
+        ;
+
+        
+    
+    
+            var circle_e37f6dbb948e463cace0045278bcabde = L.circle(
+                [53.3425, -7.0475],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9501.0, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_e37f6dbb948e463cace0045278bcabde.bindTooltip(
+                `<div>
+                     Edenderry Library, Co. Offaly<br>Max Daily PM2.5 (Mean): 95.01
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_9f4d1b9c4b6f4349882e4b0fd4bd4a4c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9f1e2b977624b438091be6a6eed095e = $(`<div id="html_f9f1e2b977624b438091be6a6eed095e" style="width: 100.0%; height: 100.0%;">     <iframe src="fig17.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_9f4d1b9c4b6f4349882e4b0fd4bd4a4c.setContent(html_f9f1e2b977624b438091be6a6eed095e);
+        
+
+        circle_e37f6dbb948e463cace0045278bcabde.bindPopup(popup_9f4d1b9c4b6f4349882e4b0fd4bd4a4c)
+        ;
+
+        
+    
+    
+            var circle_6b7960be5dcb4dd19315bde6876fe5d8 = L.circle(
+                [53.190239, -7.986503],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2395.333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_6b7960be5dcb4dd19315bde6876fe5d8.bindTooltip(
+                `<div>
+                     Banagher, Co. Offaly<br>Max Daily PM2.5 (Mean): 23.95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_7126d8ee84b54ec4bd6c4dc7c9882873 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d96db8f39824460b8d4cfc80868bd17 = $(`<div id="html_7d96db8f39824460b8d4cfc80868bd17" style="width: 100.0%; height: 100.0%;">     <iframe src="fig18.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_7126d8ee84b54ec4bd6c4dc7c9882873.setContent(html_7d96db8f39824460b8d4cfc80868bd17);
+        
+
+        circle_6b7960be5dcb4dd19315bde6876fe5d8.bindPopup(popup_7126d8ee84b54ec4bd6c4dc7c9882873)
+        ;
+
+        
+    
+    
+            var circle_1631388e82414a70a809fdb50ec9f369 = L.circle(
+                [53.37188199999999, -6.486747],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2050.625, "stroke": true, "weight": 3}
+            ).addTo(map_3b18ace995b54edda950c11cf3351a96);
+        
+    
+            circle_1631388e82414a70a809fdb50ec9f369.bindTooltip(
+                `<div>
+                     Leixlip Library, Co. Kildare<br>Max Daily PM2.5 (Mean): 20.51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+        var popup_f69b4d8fdc7c44159719d3adf62c9b83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ddc7d1c687b44a79e5bc9eedb59a0b7 = $(`<div id="html_2ddc7d1c687b44a79e5bc9eedb59a0b7" style="width: 100.0%; height: 100.0%;">     <iframe src="fig19.html" width="850" height="400"  frameborder="0">     </div>`)[0];
+            popup_f69b4d8fdc7c44159719d3adf62c9b83.setContent(html_2ddc7d1c687b44a79e5bc9eedb59a0b7);
+        
+
+        circle_1631388e82414a70a809fdb50ec9f369.bindPopup(popup_f69b4d8fdc7c44159719d3adf62c9b83)
+        ;
+
+        
+    
+</script>
