@@ -187,7 +187,7 @@ for i in sites:
         print("")
 
 print('Finished collection historical air quality data')
-aq_historical_data.to_csv('aq_historical_data1.csv')
+aq_historical_data.to_csv('aq_historical_data_sample.csv')
 
 # Close chromedriver window
 driver.quit()

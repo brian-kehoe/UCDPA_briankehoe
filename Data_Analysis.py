@@ -42,7 +42,7 @@ aq_data_hist = aq_data_merge.copy()
 aq_data_hist['date and time'] = pd.to_datetime(aq_data_hist['Date and Time'], format="%d/%m/%Y %H:%M")
 aq_data_hist['date'] = pd.to_datetime(aq_data_hist['date and time']).dt.date
 aq_data_hist['time'] = pd.to_datetime(aq_data_hist['date and time']).dt.time
-#aq_data_hist.to_csv('aq_data_hist.csv')
+
 
 # Calculate 'daily mean' and 'daily max' columns
 site_daily_average_max = aq_data_hist
@@ -50,15 +50,15 @@ site_daily_average_max['daily mean'] = site_daily_average_max.groupby(['Site', '
 site_daily_average_max['daily max'] = site_daily_average_max.groupby(['Site', 'date'])['PM2.5'].transform('max')
 site_average_all = site_daily_average_max[['Site', 'location', 'date', 'PM2.5', 'daily max', 'daily mean', 'PM10',
                                            'SO2', 'time', 'date and time']]
-#site_daily_average_max.to_csv('site_daily_average_max.csv')
+
 
 # Filter data to only show 'daily max' values
 site_daily_max = site_daily_average_max.copy()
 site_daily_max = site_daily_max[site_daily_max["PM2.5"] == site_daily_max["daily max"]]
 site_daily_max = site_daily_max.sort_values(by=['Site', 'date'], ascending=True)
-#site_daily_max.to_csv('site_daily_max.csv')
 
-# Add 'site max mean' column
+
+# Add 'site max mean' column to show sites with consistent episodes of poor air quality
 # Drop duplicates and na values
 # Sort by 'site max mean' in descending order
 site_total_average_max = site_daily_max.copy()
@@ -67,12 +67,14 @@ site_total_average_max = site_total_average_max[["Site", "location", "site max m
 site_total_average_max.drop_duplicates(keep="first", inplace=True)
 site_total_average_max = site_total_average_max.dropna()
 site_total_average_max = site_total_average_max.sort_values(by=['site max mean'], ascending=False)
-#site_total_average_max.to_csv('site_total_average_max.csv')
+site_total_average_max.to_csv("site_total_average_max.csv")
+print(site_total_average_max['site max mean'].describe(percentiles=[0.25, 0.5, 0.75, 0.85, 0.95, 0.98]))
+
 
 # Select the top 20 sites by 'site max mean'
 top_site_average_max = site_total_average_max.copy()
 top_site_average_max = top_site_average_max.head(20)
-#top_site_average_max.to_csv('top_site_average_max.csv')
+
 
 # Filter historical 'daily max' data to top 20 sites
 top_sites_daily_max_mean = site_daily_max.copy()
@@ -104,7 +106,8 @@ top_sites_monthly_max_mean_highest = top_sites_monthly_max_mean.copy()
 top_sites_monthly_max_mean_highest['highest monthly max mean'] = top_sites_monthly_max_mean_highest.groupby(['Site'])['monthly max mean'].transform('max')
 top_sites_monthly_max_mean_highest = top_sites_monthly_max_mean_highest[top_sites_monthly_max_mean_highest["monthly max mean"] == top_sites_monthly_max_mean_highest["highest monthly max mean"]]
 print(top_sites_monthly_max_mean_highest['highest monthly max mean'].describe(percentiles=[0.25, 0.5, 0.75, 0.85, 0.95, 0.98]))
-#top_sites_monthly_max_mean_highest.to_csv("top_sites_monthly_max_mean_highest.csv")
+
+aq_daily_max_mean_and_population = pd.read_csv('aq_daily_max_mean_and_population.csv')
 
 
 print("Finished historical air quality data analysis")

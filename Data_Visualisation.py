@@ -138,6 +138,9 @@ print("BEGINNING HISTORICAL DATA VISUALISATION")
 
 # #### Create plots for historical data for selected location ####
 
+site_total_average_max = pd.read_csv("site_total_average_max.csv")
+sns.relplot(x="location", y="Daily PM2.5 Max (Mean)", data=site_total_average_max)
+
 
 # Read historical data
 df_read = pd.read_csv('aq_data_merge.csv')
