@@ -28,11 +28,8 @@ def get_data():
     url = "https://airquality.ie/assets/php/get-monitors.php"
     headers = {"Referer": "https://airquality.ie/assets/php"}
     aq_current_raw_data = pd.read_json(requests.get(url, headers=headers).text)
-    print(aq_current_raw_data['latest_reading'])
     aq_current_latest_reading_dict = pd.DataFrame.from_dict(aq_current_raw_data['latest_reading'])
-    print(aq_current_latest_reading_dict)
     aq_current_latest_reading = aq_current_latest_reading_dict['latest_reading'].apply(pd.Series)
-    #aq_current_latest_reading = pd.json_normalize(aq_current_raw_data['latest_reading'])
     aq_current_data = pd.merge(aq_current_raw_data, aq_current_latest_reading, left_on='monitor_id', right_on='monitor_id')
     aq_current_data.to_csv('aq_current_data.csv')
 
@@ -88,7 +85,7 @@ ROOT.withdraw()
 USER_INP = simpledialog.askinteger(title="Historical Air Quality Data Collection",
                                    prompt="How many days historical data do you want?:")
 
-yesterday = date.today() + relativedelta(days=-228)
+yesterday = date.today() + relativedelta(days=-1)
 yesterday_day = yesterday.strftime("%d")
 yesterday_month = yesterday.strftime("%b")
 yesterday_year = yesterday.strftime("%Y")
@@ -103,7 +100,6 @@ user_date = user_date_day + "+" + user_date_month + "+" + user_date_year
 
 # Create list of current valid site codes
 sites = aq_current_valid_sites["code"]
-print(sites)
 sites_count = len(sites)  # Count number of sites
 
 # Set column names and create empty dataframe
@@ -191,7 +187,7 @@ for i in sites:
         print("")
 
 print('Finished collection historical air quality data')
-aq_historical_data.to_csv('aq_historical_data.csv')
+aq_historical_data.to_csv('aq_historical_data1.csv')
 
 # Close chromedriver window
 driver.quit()

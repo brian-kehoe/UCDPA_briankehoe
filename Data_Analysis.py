@@ -8,6 +8,9 @@ print("Running current air quality data analysis...")
 # Read data from CSV
 aq_current_valid_sites = pd.read_csv('aq_current_valid_sites.csv')
 
+# Summary statistics for current valid sites
+print(aq_current_valid_sites['pm2_5'].describe(percentiles=[0.25, 0.5, 0.75, 0.85, 0.95, 0.98]))
+
 # Create filtered list for 'lat_lon_aq_data.csv'
 lat_lon_aq_data = aq_current_valid_sites.copy()
 lat_lon_aq_data = lat_lon_aq_data[["label", "location", "latitude", "longitude"]]
@@ -93,7 +96,16 @@ top_sites_monthly_max_mean = top_sites_monthly_max_mean.drop(columns=['Date and 
 top_sites_monthly_max_mean.drop_duplicates(keep="first", inplace=True)
 top_sites_monthly_max_mean['count'] = top_sites_monthly_max_mean.groupby('Site')['Site'].transform('count')
 top_sites_monthly_max_mean = top_sites_monthly_max_mean[top_sites_monthly_max_mean["count"] == 12]
+top_sites_monthly_max_mean = top_sites_monthly_max_mean.sort_values(by=['location'], ascending=True)
 top_sites_monthly_max_mean.to_csv("top_sites_monthly_max_mean.csv")
+
+# Summary statistics for current valid sites
+top_sites_monthly_max_mean_highest = top_sites_monthly_max_mean.copy()
+top_sites_monthly_max_mean_highest['highest monthly max mean'] = top_sites_monthly_max_mean_highest.groupby(['Site'])['monthly max mean'].transform('max')
+top_sites_monthly_max_mean_highest = top_sites_monthly_max_mean_highest[top_sites_monthly_max_mean_highest["monthly max mean"] == top_sites_monthly_max_mean_highest["highest monthly max mean"]]
+print(top_sites_monthly_max_mean_highest['highest monthly max mean'].describe(percentiles=[0.25, 0.5, 0.75, 0.85, 0.95, 0.98]))
+#top_sites_monthly_max_mean_highest.to_csv("top_sites_monthly_max_mean_highest.csv")
+
 
 print("Finished historical air quality data analysis")
 
