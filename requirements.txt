@@ -1,0 +1,9 @@
+pandas
+requests
+selenium
+python-dateutil
+numpy
+matplotlib
+plotly
+folium
+seaborn
